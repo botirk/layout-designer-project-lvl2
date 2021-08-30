@@ -1,0 +1,19 @@
+{
+  "name": "botirk: layout-designer-project-lvl2",
+  "version": "1.0.0",
+  "description": "Educational project",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/botirk/layout-designer-project-lvl2.git"
+  },
+  "author": "botirk",
+  "license": "ISC",
+  "dependencies": {
+    "htmlhint": "^0.15.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
+    "surge": "^0.23.0"
+  }
+}
