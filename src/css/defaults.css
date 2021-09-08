@@ -1,0 +1,139 @@
+.color-black {
+  color: #08020D;
+}
+
+.bg-black {
+  background-color: #08020D;
+}
+
+.color-gray {
+  color: #E0E0E0;
+}
+
+.bg-gray {
+  background-color: #E0E0E0;
+}
+
+.color-dark-gray {
+  color: #CACACA;
+}
+
+.bg-dark-gray {
+  background-color: #CACACA;
+}
+
+.color-dark {
+  color: #3C3B3D;
+}
+
+.bg-dark {
+  background-color: #3C3B3D;
+}
+
+.color-green {
+  color: #34C176;
+}
+
+.bg-green {
+  background-color: #34C176;
+}
+
+.color-orange {
+  color: #F89202;
+}
+
+.bg-orange {
+  background-color: #F89202;
+}
+
+.color-purple {
+  color: #5328A1;
+}
+
+.bg-purple {
+  background-color: #5328A1;
+}
+
+.color-red {
+  color: #95390C;
+}
+
+.bg-red {
+  background-color: #95390C;
+}
+
+.color-white {
+  color: white;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/roboto/Roboto-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/roboto/Roboto-Bold.ttf);
+  font-weight: bold;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  color: #3C3B3D;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+@media (max-width: 415px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: bold;
+}
+@media (max-width: 415px) {
+  h2 {
+    font-size: 18px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+}
+@media (max-width: 415px) {
+  h3 {
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+@media (max-width: 415px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

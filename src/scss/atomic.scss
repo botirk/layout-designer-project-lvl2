@@ -1,0 +1,14 @@
+$margins: 91;
+
+@each $margin in $margins {
+  .mt-#{$margin} { margin-top: #{$margin}px; }
+  .mb-#{$margin} { margin-bottom: #{$margin}px; }
+  .ms-#{$margin} { margin-inline-start: #{$margin}px; }
+  .me-#{$margin} { margin-inline-end: #{$margin}px; }
+}
+
+$font-sizes: 10;
+
+@each $fs in $font-sizes {
+  .fs-#{$fs} { font-size: #{$fs}px; }
+}

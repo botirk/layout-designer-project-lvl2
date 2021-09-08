@@ -15,3 +15,6 @@ deploy:
 
 chmod:
 	sudo chmod -R 775 .
+
+serve:
+	npx gulp
