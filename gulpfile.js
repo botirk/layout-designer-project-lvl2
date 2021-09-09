@@ -15,13 +15,11 @@ gulp.task('browser-sync', function(done) {
 });
 
 gulp.task('compile scss', function(done){
-  gulp.src('src/scss/*.scss')
+  gulp.src('src/scss/index.scss')
     .pipe(plumber())
     .pipe(sass())
-    .pipe(plumber.stop())
-    .pipe(gulp.dest('src/css'))
-    .pipe(browserSync.reload({ stream: true }));
-  
+    .pipe(gulp.dest('src/css'));
+
   done();
 });
 
@@ -31,4 +29,4 @@ gulp.task('watch scss', function(done) {
   done();
 });
 
-gulp.task('default', gulp.parallel('compile scss', 'watch scss', 'browser-sync'));
+gulp.task('default', gulp.series('compile scss', gulp.parallel('watch scss', 'browser-sync')));

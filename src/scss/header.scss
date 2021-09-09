@@ -12,9 +12,7 @@ header {
   align-items: center;
 
   @include media.mobile {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 27px;
+    top: 27px;
 
     flex-direction: column;
     justify-content: initial;
@@ -79,26 +77,28 @@ header .name.name-selected {
 
 // bellow .name.name-selected specially for mobile
 // every odd name other color
-header .nav-group a:nth-of-type(odd) .name {
-  color: map-get($colors, 'white');
-}
-
-header .nav-group a:nth-of-type(even) .name {
-  color: map-get($colors, 'dark-gray');
+@include media.mobile {
+  header .nav-group a:nth-of-type(odd) .name {
+    color: map-get($colors, 'white');
+  }
+  
+  header .nav-group a:nth-of-type(even) .name {
+    color: map-get($colors, 'dark-gray');
+  }
 }
 
 header input {
   width: 248px;
+  @include media.mobile { width: 100%; }
   height: 25px;
   border-radius: 50px;
   border: none;
 
+  color: map-get($colors, 'white');
   background-color: map-get($colors, 'dark');
   &::placeholder { color: #757575 }
 
   font-size: 13.3px;
   text-indent: 10px;
-
-  @include media.mobile { width: 100%; }
 }
 

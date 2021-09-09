@@ -8,6 +8,7 @@ $colors: (
   "purple": #5328A1,
   "red": #95390C,
   "white": white,
+  "transparent": transparent,
 );
 
 @each $k, $v in $colors {

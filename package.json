@@ -11,8 +11,10 @@
   "dependencies": {
     "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^5.0.0",
+    "gulp-scss-combine": "^1.0.0",
     "htmlhint": "^0.15.1",
     "sass": "^1.38.2",
     "stylelint": "^13.13.1",

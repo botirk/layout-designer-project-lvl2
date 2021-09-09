@@ -70,6 +70,14 @@
   background-color: white;
 }
 
+.color-transparent {
+  color: transparent;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url(../fonts/roboto/Roboto-Regular.ttf);
@@ -83,6 +91,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 150%;
@@ -138,24 +147,40 @@ a {
   text-decoration: none;
 }
 
-.mt-91 {
-  margin-top: 91px;
+.mt-24 {
+  margin-top: 24px;
 }
 
-.mb-91 {
-  margin-bottom: 91px;
+.mb-24 {
+  margin-bottom: 24px;
 }
 
-.ms-91 {
-  margin-inline-start: 91px;
+.ms-24 {
+  margin-inline-start: 24px;
 }
 
-.me-91 {
-  margin-inline-end: 91px;
+.me-24 {
+  margin-inline-end: 24px;
 }
 
 .fs-10 {
   font-size: 10px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 header {
@@ -169,9 +194,7 @@ header {
 }
 @media (max-width: 415px) {
   header {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 27px;
+    top: 27px;
     flex-direction: column;
     justify-content: initial;
     align-items: initial;
@@ -235,30 +258,32 @@ header .name.name-selected {
   color: white;
 }
 
-header .nav-group a:nth-of-type(odd) .name {
-  color: white;
-}
+@media (max-width: 415px) {
+  header .nav-group a:nth-of-type(odd) .name {
+    color: white;
+  }
 
-header .nav-group a:nth-of-type(even) .name {
-  color: #CACACA;
+  header .nav-group a:nth-of-type(even) .name {
+    color: #CACACA;
+  }
 }
-
 header input {
   width: 248px;
   height: 25px;
   border-radius: 50px;
   border: none;
+  color: white;
   background-color: #3C3B3D;
   font-size: 13.3px;
   text-indent: 10px;
-}
-header input::placeholder {
-  color: #757575;
 }
 @media (max-width: 415px) {
   header input {
     width: 100%;
   }
+}
+header input::placeholder {
+  color: #757575;
 }
 
 #page-description {
@@ -286,4 +311,63 @@ header input::placeholder {
     margin-left: 20px;
     margin-right: 20px;
   }
+}
+
+#page-description .container-v {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+@media (max-width: 415px) {
+  #page-description .container-v {
+    margin-top: 250px;
+  }
+}
+
+#page-description .form-description {
+  margin-top: 31px;
+}
+@media (max-width: 415px) {
+  #page-description .form-description {
+    margin-top: 16px;
+  }
+}
+
+#page-description form {
+  max-width: 570px;
+  margin-top: 17px;
+}
+@media (max-width: 415px) {
+  #page-description form {
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+#page-description form div {
+  display: flex;
+  gap: 34px;
+}
+@media (max-width: 415px) {
+  #page-description form div {
+    flex-direction: column;
+  }
+}
+#page-description form div input {
+  min-width: 270px;
+  min-height: 50px;
+  border-radius: 3px;
+  border: 2px solid #CACACA;
+  text-indent: 22.24px;
+}
+#page-description form div input::placeholder {
+  color: white;
+}
+#page-description form input[type=submit] {
+  width: 100%;
+  height: 57px;
+  margin-top: 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

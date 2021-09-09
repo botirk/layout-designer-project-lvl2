@@ -1,5 +1,6 @@
 @use 'header.scss';
 @use 'media.scss' as media;
+@use 'colors.scss' as *;
 
 #page-description {
   height: 750px;
@@ -23,5 +24,57 @@
   @include media.mobile {
     margin-left: 20px;
     margin-right: 20px;
+  }
+}
+
+#page-description .container-v {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 200px;
+  @include media.mobile { margin-top: 250px; }
+}
+
+#page-description .form-description {
+  margin-top: 31px;
+  @include media.mobile { margin-top: 16px; }
+}
+
+#page-description form {
+  max-width: 570px;
+  margin-top: 17px;
+  @include media.mobile { 
+    width: 100%;
+    margin-top: 16px; 
+  }
+
+  div {
+    display: flex;
+    @include media.mobile { flex-direction: column; }
+    gap: 34px;
+
+
+    input {
+      min-width: 270px;
+      min-height: 50px;
+
+      border-radius: 3px;
+      border: 2px solid #CACACA;
+
+      text-indent: 22.24px;
+      &::placeholder { color: map-get($colors, 'white') }
+    }
+  }
+
+  input[type=submit] {
+    width: 100%;
+    height: 57px;
+    margin-top: 24px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
   }
 }
