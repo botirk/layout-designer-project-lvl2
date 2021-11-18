@@ -7,7 +7,7 @@ $margins: 24;
   .me-#{$margin} { margin-inline-end: #{$margin}px; }
 }
 
-$font-sizes: 10, 16, 14, 13;
+$font-sizes: 10, 16, 14, 13, 24;
 
 @each $fs in $font-sizes {
   .fs-#{$fs} { font-size: #{$fs}px; }

@@ -106,7 +106,7 @@ h1 {
   font-size: 60px;
   font-weight: bold;
 }
-@media (max-width: 415px) {
+@media (max-width: 1200px) {
   h1 {
     font-size: 30px;
   }
@@ -116,7 +116,7 @@ h2 {
   font-size: 38px;
   font-weight: bold;
 }
-@media (max-width: 415px) {
+@media (max-width: 1200px) {
   h2 {
     font-size: 18px;
   }
@@ -125,7 +125,7 @@ h2 {
 h3 {
   font-size: 24px;
 }
-@media (max-width: 415px) {
+@media (max-width: 1200px) {
   h3 {
     font-weight: bold;
     font-size: 16px;
@@ -136,7 +136,7 @@ h4 {
   font-size: 18px;
   font-weight: bold;
 }
-@media (max-width: 415px) {
+@media (max-width: 1200px) {
   h4 {
     font-size: 18px;
   }
@@ -179,6 +179,10 @@ a {
   font-size: 13px;
 }
 
+.fs-24 {
+  font-size: 24px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -192,7 +196,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 415px) {
+@media (max-width: 1200px) {
   header {
     top: 27px;
     flex-direction: column;
@@ -201,68 +205,57 @@ header {
     gap: 18px;
   }
 }
-
 header * {
   font-size: 11px;
 }
-
 header img {
   width: 24px;
   height: 24px;
 }
-
 header .starting-group {
   display: flex;
   align-items: center;
   gap: 91px;
 }
-@media (max-width: 415px) {
+@media (max-width: 1200px) {
   header .starting-group {
     align-items: initial;
     flex-direction: column;
     gap: 17px;
   }
 }
-
 header .logo-group {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-
 header .logo-group a {
   height: 24px;
 }
-
 header .logo-group a img {
   width: 24px;
   height: 24px;
 }
-
 header .nav-group {
   display: flex;
   gap: 24px;
 }
-@media (max-width: 415px) {
+@media (max-width: 1200px) {
   header .nav-group {
     flex-direction: column;
     gap: 3px;
   }
 }
-
 header .name {
   color: #CACACA;
 }
-
 header .name.name-selected {
   color: white;
 }
-
-@media (max-width: 415px) {
+@media (max-width: 1200px) {
   header .nav-group a:nth-of-type(odd) .name {
     color: white;
   }
-
   header .nav-group a:nth-of-type(even) .name {
     color: #CACACA;
   }
@@ -277,7 +270,7 @@ header input {
   font-size: 13.3px;
   text-indent: 10px;
 }
-@media (max-width: 415px) {
+@media (max-width: 1200px) {
   header input {
     width: 100%;
   }
@@ -293,12 +286,11 @@ header input::placeholder {
   background-position: center;
   background-size: cover;
 }
-@media (max-width: 415px) {
+@media (max-width: 1200px) {
   #page-description {
     height: 853px;
   }
 }
-
 #page-description .container {
   position: relative;
   display: flex;
@@ -306,39 +298,36 @@ header input::placeholder {
   margin-left: 119px;
   margin-right: 121px;
 }
-@media (max-width: 415px) {
+@media (max-width: 1200px) {
   #page-description .container {
     margin-left: 20px;
     margin-right: 20px;
   }
 }
-
 #page-description .container-v {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 200px;
 }
-@media (max-width: 415px) {
+@media (max-width: 1200px) {
   #page-description .container-v {
     margin-top: 250px;
   }
 }
-
 #page-description .form-description {
   margin-top: 31px;
 }
-@media (max-width: 415px) {
+@media (max-width: 1200px) {
   #page-description .form-description {
     margin-top: 16px;
   }
 }
-
 #page-description form {
   max-width: 570px;
   margin-top: 17px;
 }
-@media (max-width: 415px) {
+@media (max-width: 1200px) {
   #page-description form {
     width: 100%;
     margin-top: 16px;
@@ -348,7 +337,7 @@ header input::placeholder {
   display: flex;
   gap: 34px;
 }
-@media (max-width: 415px) {
+@media (max-width: 1200px) {
   #page-description form div {
     flex-direction: column;
   }
@@ -362,6 +351,7 @@ header input::placeholder {
 }
 #page-description form div input::placeholder {
   color: white;
+  opacity: 1;
 }
 #page-description form input[type=submit] {
   width: 100%;
@@ -370,4 +360,34 @@ header input::placeholder {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+#page-pricing {
+  background-color: #08020D;
+  display: flex;
+  flex-direction: column;
+}
+#page-pricing .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+#page-pricing .card-container {
+  display: flex;
+  gap: 47px;
+}
+#page-pricing .card {
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 368.2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#page-pricing .card:nth-child(1) {
+  background-image: url("../images/pricing1.png");
 }

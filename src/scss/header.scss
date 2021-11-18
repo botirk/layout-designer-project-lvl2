@@ -19,86 +19,85 @@ header {
     align-items: initial;
     gap: 18px;
   }
-}
 
-header * {
-  font-size: 11px;
-}
-
-header img {
-  width: 24px;
-  height: 24px;
-}
-
-header .starting-group {
-  display: flex;
-  align-items: center;
-  gap: 91px;
-
-  @include media.mobile {
-    align-items: initial;
-    flex-direction: column;
-    gap: 17px;
+  & * {
+    font-size: 11px;
   }
-}
 
-header .logo-group {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-header .logo-group a {
-  height: 24px;
-}
-
-header .logo-group a img {
-  width: 24px;
-  height: 24px;
-}
-
-header .nav-group {
-  display: flex;
-  gap: 24px;
-
-  @include media.mobile {
-    flex-direction: column;
-    gap: 3px;
+  & img {
+    width: 24px;
+    height: 24px;
   }
-}
-
-header .name {
-  color: map-get($colors, 'dark-gray');
-}
-
-header .name.name-selected {
-  color: map-get($colors, 'white');
-}
-
-// bellow .name.name-selected specially for mobile
-// every odd name other color
-@include media.mobile {
-  header .nav-group a:nth-of-type(odd) .name {
+  
+  & .starting-group {
+    display: flex;
+    align-items: center;
+    gap: 91px;
+  
+    @include media.mobile {
+      align-items: initial;
+      flex-direction: column;
+      gap: 17px;
+    }
+  }
+  
+  & .logo-group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  & .logo-group a {
+    height: 24px;
+  }
+  
+  & .logo-group a img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  & .nav-group {
+    display: flex;
+    gap: 24px;
+  
+    @include media.mobile {
+      flex-direction: column;
+      gap: 3px;
+    }
+  }
+  
+  & .name {
+    color: map-get($colors, 'dark-gray');
+  }
+  
+  & .name.name-selected {
     color: map-get($colors, 'white');
   }
   
-  header .nav-group a:nth-of-type(even) .name {
-    color: map-get($colors, 'dark-gray');
+  // bellow .name.name-selected specially for mobile
+  // every odd name other color
+  @include media.mobile {
+    & .nav-group a:nth-of-type(odd) .name {
+      color: map-get($colors, 'white');
+    }
+    
+    & .nav-group a:nth-of-type(even) .name {
+      color: map-get($colors, 'dark-gray');
+    }
+  }
+  
+  & input {
+    width: 248px;
+    @include media.mobile { width: 100%; }
+    height: 25px;
+    border-radius: 50px;
+    border: none;
+  
+    color: map-get($colors, 'white');
+    background-color: map-get($colors, 'dark');
+    &::placeholder { color: #757575 }
+  
+    font-size: 13.3px;
+    text-indent: 10px;
   }
 }
-
-header input {
-  width: 248px;
-  @include media.mobile { width: 100%; }
-  height: 25px;
-  border-radius: 50px;
-  border: none;
-
-  color: map-get($colors, 'white');
-  background-color: map-get($colors, 'dark');
-  &::placeholder { color: #757575 }
-
-  font-size: 13.3px;
-  text-indent: 10px;
-}
-

@@ -3,7 +3,7 @@ install:
 	npm install -D
 
 lint:
-	npx stylelint ./src/styles/*.css
+	npx stylelint ./src/css/*.css
 	npx htmlhint ./src/*.html
 
 lint+fix:
