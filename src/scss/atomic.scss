@@ -7,10 +7,18 @@ $margins: 24;
   .me-#{$margin} { margin-inline-end: #{$margin}px; }
 }
 
-$font-sizes: 10, 16, 14, 13, 24;
+$font-sizes: 10, 16, 14, 13, 24, 32, 64;
 
 @each $fs in $font-sizes {
   .fs-#{$fs} { font-size: #{$fs}px; }
 }
 
 .text-center { text-align: center; }
+
+.lh-100 { line-height: 100%; }
+
+.button { 
+  cursor: pointer;
+  border-radius: 3px; 
+  text-transform: capitalize;
+}
