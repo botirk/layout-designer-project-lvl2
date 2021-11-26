@@ -147,6 +147,30 @@ a {
   text-decoration: none;
 }
 
+input, button {
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+@media (max-width: 1200px) {
+  .container {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .mt-24 {
   margin-top: 24px;
 }
@@ -311,16 +335,6 @@ header input::placeholder {
 }
 #page-description .container {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-left: 119px;
-  margin-right: 121px;
-}
-@media (max-width: 1200px) {
-  #page-description .container {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
 }
 #page-description .container-v {
   display: flex;
@@ -367,7 +381,7 @@ header input::placeholder {
   border: 2px solid #CACACA;
   text-indent: 22.24px;
 }
-#page-description form div input::placeholder {
+#page-description form div input ::placeholder {
   color: white;
   opacity: 1;
 }
@@ -378,23 +392,8 @@ header input::placeholder {
   border: none;
 }
 
-#page-pricing {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 #page-pricing .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1200px;
   margin-top: 100px;
-}
-@media (max-width: 1200px) {
-  #page-pricing .container {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
 }
 #page-pricing .card-container {
   display: flex;
@@ -449,4 +448,9 @@ header input::placeholder {
 }
 #page-pricing .card .description {
   margin-top: 64px;
+}
+
+#page-news .container {
+  margin-top: 100px;
+  height: 842px;
 }

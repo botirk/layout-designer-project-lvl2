@@ -55,3 +55,26 @@ a {
   text-decoration: none;
 }
 
+input, button {
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1200px;
+  @include media.mobile { 
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
