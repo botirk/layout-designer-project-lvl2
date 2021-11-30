@@ -64,9 +64,10 @@ input, button {
   flex-direction: column;
   align-items: center;
 
-  width: 100%;
   max-width: 1200px;
+  width: 100%;
   @include media.mobile { 
+    width: calc(100% - 40px);
     margin-right: 20px;
     margin-left: 20px;
   }
