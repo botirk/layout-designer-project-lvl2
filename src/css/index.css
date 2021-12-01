@@ -146,9 +146,18 @@ a {
   color: inherit;
   text-decoration: none;
 }
+a:hover {
+  cursor: pointer;
+}
 
 input, button {
   color: inherit;
+}
+
+section, footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
@@ -166,10 +175,8 @@ input, button {
   }
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+hr {
+  width: 100%;
 }
 
 .fs-10 {
@@ -551,6 +558,7 @@ header input::placeholder {
 #page-app .content-container {
   display: flex;
   gap: 144px;
+  width: 100%;
   margin-top: 48px;
 }
 @media (max-width: 1200px) {
@@ -572,4 +580,39 @@ header input::placeholder {
   padding-right: 40px;
   padding-left: 40px;
   margin-top: 16px;
+}
+
+footer {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+footer .urls-container {
+  display: flex;
+  flex-grow: 1;
+  gap: 40px;
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  footer .urls-container {
+    flex-direction: column;
+  }
+}
+footer .column {
+  flex-grow: 1;
+}
+footer .column h4 {
+  margin-bottom: 15px;
+}
+footer .column a {
+  display: block;
+}
+footer .column .icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+footer hr {
+  margin-top: 72px;
+  margin-bottom: 40px;
 }
