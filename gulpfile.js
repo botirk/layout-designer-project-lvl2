@@ -14,8 +14,13 @@ gulp.task('browser-sync', function(done) {
   done();
 });
 
-gulp.task('compile scss', function(done){
+gulp.task('compile scss', function(done) {
   gulp.src('src/scss/index.scss')
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(gulp.dest('src/css'));
+
+  gulp.src('src/scss/artist/index.scss')
     .pipe(plumber())
     .pipe(sass())
     .pipe(gulp.dest('src/css'));

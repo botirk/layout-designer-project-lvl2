@@ -2,14 +2,14 @@
 @use 'media.scss' as media;
 
 header {
+  * {
+    font-size: 11px;
+  }
+
   position: absolute;
   top: 25px;
   left: 0px;
   right: 0px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
   @include media.mobile {
     top: 27px;
@@ -20,16 +20,18 @@ header {
     gap: 18px;
   }
 
-  & * {
-    font-size: 11px;
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    @include media.mobile { flex-direction: column; }
+
+    width: 100%;
   }
 
-  & img {
-    width: 24px;
-    height: 24px;
-  }
   
-  & .starting-group {
+  
+  .starting-group {
     display: flex;
     align-items: center;
     gap: 91px;
@@ -41,22 +43,18 @@ header {
     }
   }
   
-  & .logo-group {
+  .logo-group {
     display: flex;
     align-items: center;
     gap: 16px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
   }
   
-  & .logo-group a {
-    height: 24px;
-  }
-  
-  & .logo-group a img {
-    width: 24px;
-    height: 24px;
-  }
-  
-  & .nav-group {
+  .nav-group {
     display: flex;
     gap: 24px;
   
@@ -66,35 +64,13 @@ header {
     }
   }
   
-  & .name {
-    color: map-get($colors, 'dark-gray');
-  }
-  
-  & .name.name-selected {
-    color: map-get($colors, 'white');
-  }
-  
-  // bellow .name.name-selected specially for mobile
-  // every odd name other color
-  @include media.mobile {
-    & .nav-group a:nth-of-type(odd) .name {
-      color: map-get($colors, 'white');
-    }
-    
-    & .nav-group a:nth-of-type(even) .name {
-      color: map-get($colors, 'dark-gray');
-    }
-  }
-  
-  & input {
+  input {
     width: 248px;
     @include media.mobile { width: 100%; }
     height: 25px;
     border-radius: 50px;
     border: none;
   
-    color: map-get($colors, 'white');
-    background-color: map-get($colors, 'dark');
     &::placeholder { color: #757575 }
   
     font-size: 13.3px;
