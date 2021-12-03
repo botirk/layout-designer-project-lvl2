@@ -1,4 +1,5 @@
 const gulp       	 = require('gulp');
+const rename       = require('gulp-rename');
 const sass       	 = require('gulp-sass')(require('sass'));
 const browserSync  = require('browser-sync').create();
 const plumber 		 = require('gulp-plumber');
@@ -18,18 +19,20 @@ gulp.task('compile scss', function(done) {
   gulp.src('src/scss/index.scss')
     .pipe(plumber())
     .pipe(sass())
-    .pipe(gulp.dest('src/css'));
+    .pipe(rename('index.css'))
+    .pipe(gulp.dest('src/css/'));
 
   gulp.src('src/scss/artist/index.scss')
     .pipe(plumber())
     .pipe(sass())
-    .pipe(gulp.dest('src/css'));
+    .pipe(rename('artist.css'))
+    .pipe(gulp.dest('src/css/'));
 
   done();
 });
 
 gulp.task('watch scss', function(done) {
-  gulp.watch('src/scss/*.scss', gulp.series('compile scss'));
+  gulp.watch('src/scss/**/*.scss', gulp.series('compile scss'));
   
   done();
 });

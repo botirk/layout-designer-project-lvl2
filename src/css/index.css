@@ -4,6 +4,7 @@
 
 .bg-black {
   background-color: #08020D;
+  border-color: #08020D;
 }
 
 .color-gray {
@@ -12,6 +13,7 @@
 
 .bg-gray {
   background-color: #E0E0E0;
+  border-color: #E0E0E0;
 }
 
 .color-dark-gray {
@@ -20,6 +22,7 @@
 
 .bg-dark-gray {
   background-color: #CACACA;
+  border-color: #CACACA;
 }
 
 .color-dark {
@@ -28,6 +31,7 @@
 
 .bg-dark {
   background-color: #3C3B3D;
+  border-color: #3C3B3D;
 }
 
 .color-green {
@@ -36,6 +40,7 @@
 
 .bg-green {
   background-color: #34C176;
+  border-color: #34C176;
 }
 
 .color-orange {
@@ -44,6 +49,7 @@
 
 .bg-orange {
   background-color: #F89202;
+  border-color: #F89202;
 }
 
 .color-purple {
@@ -52,6 +58,7 @@
 
 .bg-purple {
   background-color: #5328A1;
+  border-color: #5328A1;
 }
 
 .color-red {
@@ -60,6 +67,7 @@
 
 .bg-red {
   background-color: #95390C;
+  border-color: #95390C;
 }
 
 .color-white {
@@ -68,6 +76,7 @@
 
 .bg-white {
   background-color: white;
+  border-color: white;
 }
 
 .color-transparent {
@@ -76,6 +85,7 @@
 
 .bg-transparent {
   background-color: transparent;
+  border-color: transparent;
 }
 
 @font-face {
@@ -175,6 +185,12 @@ section, footer, header {
   }
 }
 
+.button {
+  cursor: pointer;
+  border: 3px none;
+  text-transform: capitalize;
+}
+
 hr {
   width: 100%;
 }
@@ -266,12 +282,6 @@ hr {
 
 .lh-100 {
   line-height: 100%;
-}
-
-.button {
-  cursor: pointer;
-  border-radius: 3px;
-  text-transform: capitalize;
 }
 
 header {

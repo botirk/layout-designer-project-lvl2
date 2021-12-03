@@ -80,4 +80,10 @@ section, footer, header {
   }
 }
 
+.button {
+  cursor: pointer;
+  border: 3px none;
+  text-transform: capitalize;
+}
+
 hr { width: 100%; }

@@ -12,6 +12,11 @@ $colors: (
 );
 
 @each $k, $v in $colors {
-  .color-#{$k} { color: #{$v}; }
-  .bg-#{$k} { background-color: #{$v}; }
+  .color-#{$k} { 
+    color: #{$v};
+  }
+  .bg-#{$k} { 
+    background-color: #{$v}; 
+    border-color: #{$v};
+  }
 }

@@ -4,6 +4,7 @@
 
 .bg-black {
   background-color: #08020D;
+  border-color: #08020D;
 }
 
 .color-gray {
@@ -12,6 +13,7 @@
 
 .bg-gray {
   background-color: #E0E0E0;
+  border-color: #E0E0E0;
 }
 
 .color-dark-gray {
@@ -20,6 +22,7 @@
 
 .bg-dark-gray {
   background-color: #CACACA;
+  border-color: #CACACA;
 }
 
 .color-dark {
@@ -28,6 +31,7 @@
 
 .bg-dark {
   background-color: #3C3B3D;
+  border-color: #3C3B3D;
 }
 
 .color-green {
@@ -36,6 +40,7 @@
 
 .bg-green {
   background-color: #34C176;
+  border-color: #34C176;
 }
 
 .color-orange {
@@ -44,6 +49,7 @@
 
 .bg-orange {
   background-color: #F89202;
+  border-color: #F89202;
 }
 
 .color-purple {
@@ -52,6 +58,7 @@
 
 .bg-purple {
   background-color: #5328A1;
+  border-color: #5328A1;
 }
 
 .color-red {
@@ -60,6 +67,7 @@
 
 .bg-red {
   background-color: #95390C;
+  border-color: #95390C;
 }
 
 .color-white {
@@ -68,6 +76,7 @@
 
 .bg-white {
   background-color: white;
+  border-color: white;
 }
 
 .color-transparent {
@@ -76,6 +85,7 @@
 
 .bg-transparent {
   background-color: transparent;
+  border-color: transparent;
 }
 
 @font-face {
@@ -175,6 +185,12 @@ section, footer, header {
   }
 }
 
+.button {
+  cursor: pointer;
+  border: 3px none;
+  text-transform: capitalize;
+}
+
 hr {
   width: 100%;
 }
@@ -268,12 +284,6 @@ hr {
   line-height: 100%;
 }
 
-.button {
-  cursor: pointer;
-  border-radius: 3px;
-  text-transform: capitalize;
-}
-
 header {
   position: absolute;
   top: 25px;
@@ -359,54 +369,31 @@ header input::placeholder {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-@media (max-width: 1200px) {
-  #page-description {
-    padding-top: 250px;
-  }
+#page-description .container {
+  align-items: start;
 }
-#page-description .form-description {
-  margin-top: 31px;
+#page-description .counter {
+  margin-top: 16px;
 }
-@media (max-width: 1200px) {
-  #page-description .form-description {
-    margin-top: 16px;
-  }
-}
-#page-description form {
-  max-width: 570px;
-  margin-top: 17px;
-}
-@media (max-width: 1200px) {
-  #page-description form {
-    width: 100%;
-    margin-top: 16px;
-  }
-}
-#page-description form div {
+#page-description .buttons {
   display: flex;
-  gap: 34px;
+  gap: 1.5rem;
+  margin-top: 48px;
 }
-@media (max-width: 1200px) {
-  #page-description form div {
-    flex-direction: column;
-  }
+#page-description .buttons .button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 5px;
+  width: 200px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-#page-description form div input {
-  min-width: 270px;
-  min-height: 50px;
-  border-radius: 3px;
-  border: 2px solid #CACACA;
-  text-indent: 22.24px;
-}
-#page-description form div input ::placeholder {
-  color: white;
-  opacity: 1;
-}
-#page-description form input[type=submit] {
-  width: 100%;
-  height: 57px;
-  margin-top: 24px;
-  border: none;
+#page-description .buttons .button img {
+  width: 20px;
+  height: 20px;
 }
 
 footer {

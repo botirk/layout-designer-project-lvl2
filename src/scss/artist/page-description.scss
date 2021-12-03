@@ -1,4 +1,3 @@
-@use '../header.scss';
 @use '../media.scss' as media;
 @use '../colors.scss' as *;
 
@@ -9,48 +8,39 @@
   background-size: cover;
 
   padding-top: 200px;
-  @include media.mobile { padding-top: 250px; }
+  //@include media.mobile { padding-top: 250px; }
   padding-bottom: 200px;
-  
-  .form-description {
-    margin-top: 31px;
-    @include media.mobile { margin-top: 16px; }
+
+  .container {
+    align-items: start;
   }
   
-  form {
-    max-width: 570px;
-    margin-top: 17px;
-    @include media.mobile { 
-      width: 100%;
-      margin-top: 16px; 
-    }
-  
-    div {
+  .counter {
+    margin-top: 16px;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 1.5rem;
+
+    margin-top: 48px;
+
+    .button {
       display: flex;
-      @include media.mobile { flex-direction: column; }
-      gap: 34px;
-  
-      input {
-        min-width: 270px;
-        min-height: 50px;
-  
-        border-radius: 3px;
-        border: 2px solid #CACACA;
-  
-        text-indent: 22.24px;
-        ::placeholder { 
-          color: map-get($colors, 'white'); 
-          opacity: 1;
-        }
+      align-items: center;
+      gap: 16px;
+
+      border-radius: 5px;
+      width: 200px;
+      padding-right: 30px;
+      padding-left: 30px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      img {
+        width: 20px;
+        height: 20px;
       }
-    }
-  
-    input[type=submit] {
-      width: 100%;
-      height: 57px;
-      margin-top: 24px;
-  
-      border: none;
     }
   }
 }
