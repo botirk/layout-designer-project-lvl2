@@ -1,5 +1,4 @@
 @use '../media.scss' as media;
-@use '../colors.scss' as *;
 
 #page-description {
   background-color: transparent;
@@ -21,6 +20,7 @@
 
   .buttons {
     display: flex;
+    @include media.mobile { flex-direction: column; }
     gap: 1.5rem;
 
     margin-top: 48px;

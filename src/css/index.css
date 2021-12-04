@@ -114,7 +114,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 60px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   h1 {
     font-size: 30px;
   }
@@ -123,7 +123,7 @@ h1 {
 h2 {
   font-size: 38px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   h2 {
     font-size: 18px;
   }
@@ -132,12 +132,12 @@ h2 {
 h3 {
   font-size: 24px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1240px) {
   h3 {
     font-weight: normal;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   h3 {
     font-size: 16px;
   }
@@ -146,7 +146,7 @@ h3 {
 h4 {
   font-size: 18px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   h4 {
     font-size: 18px;
   }
@@ -177,7 +177,7 @@ section, footer, header {
   max-width: 1200px;
   width: 100%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   .container {
     width: calc(100% - 40px);
     margin-right: 20px;
@@ -231,47 +231,47 @@ hr {
   font-size: 12px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   .fsm-10 {
     font-size: 10px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   .fsm-16 {
     font-size: 16px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   .fsm-14 {
     font-size: 14px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   .fsm-13 {
     font-size: 13px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   .fsm-24 {
     font-size: 24px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   .fsm-32 {
     font-size: 32px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   .fsm-64 {
     font-size: 64px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   .fsm-30 {
     font-size: 30px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   .fsm-12 {
     font-size: 12px;
   }
@@ -293,7 +293,7 @@ header {
 header * {
   font-size: 11px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   header {
     top: 27px;
     flex-direction: column;
@@ -308,7 +308,7 @@ header .header-container {
   gap: 18px;
   width: 100%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   header .header-container {
     flex-direction: column;
   }
@@ -318,7 +318,7 @@ header .starting-group {
   align-items: center;
   gap: 91px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   header .starting-group {
     align-items: initial;
     flex-direction: column;
@@ -338,7 +338,7 @@ header .nav-group {
   display: flex;
   gap: 24px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   header .nav-group {
     flex-direction: column;
     gap: 3px;
@@ -352,7 +352,7 @@ header input {
   font-size: 13.3px;
   text-indent: 10px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   header input {
     width: 100%;
   }
@@ -369,7 +369,7 @@ header input::placeholder {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   #page-description {
     padding-top: 250px;
   }
@@ -377,7 +377,7 @@ header input::placeholder {
 #page-description .form-description {
   margin-top: 31px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   #page-description .form-description {
     margin-top: 16px;
   }
@@ -386,7 +386,7 @@ header input::placeholder {
   max-width: 570px;
   margin-top: 17px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   #page-description form {
     width: 100%;
     margin-top: 16px;
@@ -396,7 +396,7 @@ header input::placeholder {
   display: flex;
   gap: 34px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   #page-description form div {
     flex-direction: column;
   }
@@ -450,7 +450,7 @@ header input::placeholder {
 #page-pricing .card:nth-child(3) {
   background-image: url("../images/subscribe_3.png");
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   #page-pricing .card {
     width: calc(100vw - 40px);
   }
@@ -492,7 +492,7 @@ header input::placeholder {
   justify-content: space-between;
   gap: 50px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   #page-news .news-item {
     flex-wrap: wrap;
   }
@@ -501,7 +501,7 @@ header input::placeholder {
   width: 575px;
   height: 286px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   #page-news .news-item img {
     width: 100%;
     height: 186px;
@@ -543,7 +543,7 @@ header input::placeholder {
   width: 100%;
   margin-top: 48px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   #page-app .content-container {
     gap: 16px;
     flex-direction: column-reverse;
@@ -575,7 +575,7 @@ footer .urls-container {
   gap: 40px;
   width: 100%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   footer .urls-container {
     flex-direction: column;
   }
@@ -603,7 +603,7 @@ footer .end-container {
   gap: 16px;
   width: 100%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1239px) {
   footer .end-container {
     flex-direction: column;
   }

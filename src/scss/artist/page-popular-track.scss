@@ -1,0 +1,49 @@
+@use '../media.scss' as media;
+
+#page-popular-track {
+  padding-top: 100px;
+
+  .container {
+    align-items: start;
+  }
+
+  .track-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    width: 100%;
+    margin-top: 48px;
+
+    .track-row {
+      display: flex;
+      gap: 50px;
+      @include media.mobile {
+        flex-direction: column;
+        gap: 25px;
+      }
+    }
+  }
+
+  
+
+  .track {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: calc(50% - 50px);
+
+    img {
+      width: 55px;
+      height: 55px;
+    }
+
+    .track-info {
+      margin-left: 15px;
+    }
+
+    .track-length {
+      margin-left: auto;
+    }
+  }
+}
