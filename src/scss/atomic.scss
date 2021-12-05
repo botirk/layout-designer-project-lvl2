@@ -1,6 +1,6 @@
 @use 'media.scss' as media;
 
-$font-sizes: 10, 16, 14, 13, 24, 32, 64, 30, 12;
+$font-sizes: 10, 16, 14, 13, 24, 32, 64, 30, 12, 18;
 
 @each $fs in $font-sizes {
   .fs-#{$fs} { font-size: #{$fs}px; }

@@ -1,0 +1,37 @@
+@use '../media.scss' as media;
+
+#page-similar {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .container {
+    align-items: start;
+  }
+
+  .similar-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 25px;
+
+    margin-top: 48px;
+  }
+
+  .similar-item {
+    width: 250px;
+    @include media.mobile { width: 137px; }
+
+    img {
+      height: 250px;
+      @include media.mobile { height: 137px; }
+    }
+
+    .similar-name {
+      margin-top: 17px;
+    }
+
+    .similar-counter {
+      margin-top: 1px;
+    }
+  }
+}

@@ -231,6 +231,10 @@ hr {
   font-size: 12px;
 }
 
+.fs-18 {
+  font-size: 18px;
+}
+
 @media (max-width: 1239px) {
   .fsm-10 {
     font-size: 10px;
@@ -274,6 +278,11 @@ hr {
 @media (max-width: 1239px) {
   .fsm-12 {
     font-size: 12px;
+  }
+}
+@media (max-width: 1239px) {
+  .fsm-18 {
+    font-size: 18px;
   }
 }
 .text-center {
@@ -416,12 +425,12 @@ header input::placeholder {
 }
 #page-popular-track .track-container .track-row {
   display: flex;
-  gap: 50px;
+  row-gap: 25px;
+  column-gap: 50px;
 }
 @media (max-width: 1239px) {
   #page-popular-track .track-container .track-row {
     flex-direction: column;
-    gap: 25px;
   }
 }
 #page-popular-track .track {
@@ -439,6 +448,76 @@ header input::placeholder {
 }
 #page-popular-track .track .track-length {
   margin-left: auto;
+}
+
+#page-discography {
+  padding-top: 100px;
+}
+#page-discography .container {
+  align-items: start;
+}
+#page-discography .disc-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 25px;
+  margin-top: 48px;
+}
+#page-discography .disc-item {
+  width: 250px;
+}
+@media (max-width: 1239px) {
+  #page-discography .disc-item {
+    width: 137px;
+  }
+}
+#page-discography .disc-item img {
+  height: 250px;
+}
+@media (max-width: 1239px) {
+  #page-discography .disc-item img {
+    height: 137px;
+  }
+}
+#page-discography .disc-item .disc-name {
+  margin-top: 18px;
+}
+
+#page-similar {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#page-similar .container {
+  align-items: start;
+}
+#page-similar .similar-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 25px;
+  margin-top: 48px;
+}
+#page-similar .similar-item {
+  width: 250px;
+}
+@media (max-width: 1239px) {
+  #page-similar .similar-item {
+    width: 137px;
+  }
+}
+#page-similar .similar-item img {
+  height: 250px;
+}
+@media (max-width: 1239px) {
+  #page-similar .similar-item img {
+    height: 137px;
+  }
+}
+#page-similar .similar-item .similar-name {
+  margin-top: 17px;
+}
+#page-similar .similar-item .similar-counter {
+  margin-top: 1px;
 }
 
 footer {
