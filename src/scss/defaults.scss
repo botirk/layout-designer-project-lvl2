@@ -2,51 +2,59 @@
 @use 'colors.scss' as *;
 
 @font-face {
+  font-weight: normal;
   font-family: 'Roboto';
   src: url(../fonts/roboto/Roboto-Regular.ttf);
-  font-weight: normal;
 }
 
 @font-face {
+  font-weight: bold;
   font-family: 'Roboto';
   src: url(../fonts/roboto/Roboto-Bold.ttf);
-  font-weight: bold;
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
+  color: map-get($colors, 'dark-grey');
+  font-size: 18px;
 
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
   line-height: 150%;
-  
-  color: map-get($colors, 'dark-grey');
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   text-transform: uppercase;
 }
 
 h1 {
   font-size: 60px;
+
   @include media.mobile { font-size: 30px; }
 }
 
 h2 {
   font-size: 38px;
+
   @include media.mobile { font-size: 18px; }
 }
 
 h3 {
   font-size: 24px;
+
   @include media.desktop { font-weight: normal; }
+
   @include media.mobile { font-size: 16px; }
 }
 
 h4 {
   font-size: 18px;
+
   @include media.mobile { font-size: 18px; }
 }
 
@@ -56,11 +64,14 @@ a {
   &:hover { cursor: pointer; }
 }
 
-input, button {
+input,
+button {
   color: inherit;
 }
 
-section, footer, header {
+section,
+footer,
+header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,10 +81,11 @@ section, footer, header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 
   max-width: 1200px;
-  width: 100%;
-  @include media.mobile { 
+
+  @include media.mobile {
     width: calc(100% - 40px);
     margin-right: 20px;
     margin-left: 20px;
@@ -81,9 +93,11 @@ section, footer, header {
 }
 
 .button {
-  cursor: pointer;
   border: 3px none;
+
   text-transform: capitalize;
+
+  cursor: pointer;
 }
 
 hr { width: 100%; }

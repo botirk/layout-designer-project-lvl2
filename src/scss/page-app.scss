@@ -9,10 +9,11 @@
   .content-container {
     display: flex;
     gap: 144px;
+
     @include media.mobile {
-      gap: 16px;
       flex-direction: column-reverse;
       flex-wrap: wrap;
+      gap: 16px;
     }
 
     width: 100%;
@@ -25,12 +26,12 @@
   }
 
   .button {
+    margin-top: 16px;
+    padding-top: 16px;
+    padding-right: 40px;
+    padding-bottom: 16px;
+    padding-left: 40px;
     border-width: 0;
     border-radius: 32px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 40px;
-    padding-left: 40px;
-    margin-top: 16px;
   }
 }

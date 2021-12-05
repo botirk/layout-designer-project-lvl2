@@ -6,19 +6,20 @@
   }
 
   .news-container {
-    width: 100%;
-    margin-top: 48px;
 
     display: flex;
     flex-direction: column;
     gap: 65px;
+    width: 100%;
+    margin-top: 48px;
   }
 
   .news-item {
     display: flex;
-    @include media.mobile { flex-wrap: wrap; }
-    justify-content: space-between;
     gap: 50px;
+    justify-content: space-between;
+
+    @include media.mobile { flex-wrap: wrap; }
 
     img {
       width: 575px;
@@ -41,8 +42,8 @@
 
   .news-info {
     display: flex;
-    align-items: center;
     gap: 16px;
+    align-items: center;
 
     margin-top: 24px;
     //margin-bottom: 48px;
@@ -54,13 +55,13 @@
   }
 
   button {
-    border: 1px solid #CACACA;
-    border-radius: 5px;
+    margin-top: 48px;
+    padding-top: 16px;
+    padding-right: 30px;
+    padding-bottom: 16px;
 
     padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin-top: 48px;
+    border: 1px solid #cacaca;
+    border-radius: 5px;
   }
 }
