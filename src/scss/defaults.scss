@@ -20,7 +20,7 @@
   border: none;
 
   color: map-get($colors, 'dark-grey');
-  font-size: 18px;
+  font-size: inherit;
 
   font-family: 'Roboto', sans-serif;
   line-height: 150%;
@@ -42,7 +42,7 @@ h2 {
 
 h3 {
   font-size: 24px;
-  @include media.desktop { font-weight: normal; }
+  font-weight: normal;
   @include media.mobile { font-size: 16px; }
 }
 
