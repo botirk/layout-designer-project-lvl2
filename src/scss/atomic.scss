@@ -10,6 +10,11 @@ $font-sizes: 10, 16, 14, 13, 24, 32, 64, 30, 12, 18;
   @include media.mobile { .fsm-#{$fs} { font-size: #{$fs}px; } }
 }
 
+$border-radiuses: 3, 5;
+@each $br in $border-radiuses {
+  .br-#{$br} { border-radius: #{$br}px; }
+}
+
 .text-center { text-align: center; }
 
 .lh-100 { line-height: 100%; }
