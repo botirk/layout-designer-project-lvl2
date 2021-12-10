@@ -323,10 +323,6 @@ header {
 @media (max-width: 1239px) {
   header {
     top: 27px;
-    flex-direction: column;
-    gap: 18px;
-    align-items: initial;
-    justify-content: initial;
   }
 }
 header .header-container {
@@ -363,7 +359,7 @@ header .header-container .header-left .logo-group img {
   width: 24px;
   height: 24px;
 }
-header .header-container .header-left .site-name {
+header .header-container .header-left .logo-group .site-name {
   margin-left: 16px;
 }
 header .header-container .header-left .nav-group {

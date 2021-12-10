@@ -7,14 +7,7 @@ header {
   right: 0;
   left: 0;
 
-  @include media.mobile {
-    top: 27px;
-
-    flex-direction: column;
-    gap: 18px;
-    align-items: initial;
-    justify-content: initial;
-  }
+  @include media.mobile { top: 27px; }
 
   .header-container {
     width: 100%;
@@ -39,11 +32,10 @@ header {
           width: 24px;
           height: 24px;
         }
+
+        .site-name { margin-left: 16px; }
       }
       
-
-      .site-name { margin-left: 16px; }
-
       .nav-group {
         display: flex;
         column-gap: 24px;

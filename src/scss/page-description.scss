@@ -2,18 +2,15 @@
 @use 'colors.scss' as *;
 
 #page-description {
-
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: transparent;
   background-image: url('../images/banner.png');
   background-position: center;
   background-size: cover;
 
   .form-description {
     margin-top: 31px;
-
     @include media.mobile { margin-top: 16px; }
   }
 
@@ -39,7 +36,7 @@
 
         text-indent: 22.24px;
 
-        ::placeholder {
+        &::placeholder {
           color: white;
           opacity: 1;
         }
