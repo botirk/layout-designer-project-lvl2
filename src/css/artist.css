@@ -195,6 +195,10 @@ hr {
   font-size: 10px;
 }
 
+.fs-11 {
+  font-size: 11px;
+}
+
 .fs-16 {
   font-size: 16px;
 }
@@ -238,6 +242,11 @@ hr {
 @media (max-width: 1239px) {
   .fsm-10 {
     font-size: 10px;
+  }
+}
+@media (max-width: 1239px) {
+  .fsm-11 {
+    font-size: 11px;
   }
 }
 @media (max-width: 1239px) {
@@ -301,14 +310,15 @@ hr {
   line-height: 100%;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 header {
   position: absolute;
   top: 25px;
   right: 0;
   left: 0;
-}
-header * {
-  font-size: 11px;
 }
 @media (max-width: 1239px) {
   header {
@@ -320,48 +330,53 @@ header * {
   }
 }
 header .header-container {
-  display: flex;
-  gap: 18px;
-  justify-content: space-between;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  row-gap: 18px;
 }
 @media (max-width: 1239px) {
   header .header-container {
     flex-direction: column;
   }
 }
-header .starting-group {
+header .header-container .header-left {
   display: flex;
-  gap: 91px;
-  align-items: center;
+  column-gap: 90px;
+  row-gap: 17px;
 }
-@media (max-width: 1239px) {
-  header .starting-group {
-    flex-direction: column;
-    gap: 17px;
-    align-items: initial;
+@media (min-width: 1240px) {
+  header .header-container .header-left {
+    align-items: center;
   }
 }
-header .logo-group {
+@media (max-width: 1239px) {
+  header .header-container .header-left {
+    flex-direction: column;
+  }
+}
+header .header-container .header-left .logo-group {
   display: flex;
-  gap: 16px;
   align-items: center;
 }
-header .logo-group img {
+header .header-container .header-left .logo-group img {
   width: 24px;
   height: 24px;
 }
-header .nav-group {
+header .header-container .header-left .site-name {
+  margin-left: 16px;
+}
+header .header-container .header-left .nav-group {
   display: flex;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 3px;
 }
 @media (max-width: 1239px) {
-  header .nav-group {
+  header .header-container .header-left .nav-group {
     flex-direction: column;
-    gap: 3px;
   }
 }
-header input {
+header .header-container input {
   width: 248px;
   height: 25px;
   border: none;
@@ -370,11 +385,11 @@ header input {
   text-indent: 10px;
 }
 @media (max-width: 1239px) {
-  header input {
+  header .header-container input {
     width: 100%;
   }
 }
-header input::placeholder {
+header .header-container input::placeholder {
   color: #757575;
 }
 

@@ -2,10 +2,6 @@
 @use 'media.scss' as media;
 
 header {
-  * {
-    font-size: 11px;
-  }
-
   position: absolute;
   top: 25px;
   right: 0;
@@ -21,61 +17,53 @@ header {
   }
 
   .header-container {
-    display: flex;
-    gap: 18px;
-    justify-content: space-between;
-
     width: 100%;
 
+    display: flex;
+    justify-content: space-between;
+    row-gap: 18px;
     @include media.mobile { flex-direction: column; }
-  }
 
+    .header-left {
+      display: flex;
+      column-gap: 90px;
+      row-gap: 17px;
+      @include media.desktop { align-items: center; }
+      @include media.mobile { flex-direction: column; }
 
+      .logo-group {
+        display: flex;
+        align-items: center;
 
-  .starting-group {
-    display: flex;
-    gap: 91px;
-    align-items: center;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      
 
-    @include media.mobile {
-      flex-direction: column;
-      gap: 17px;
-      align-items: initial;
+      .site-name { margin-left: 16px; }
+
+      .nav-group {
+        display: flex;
+        column-gap: 24px;
+        row-gap: 3px;
+        @include media.mobile { flex-direction: column; }
+      }
     }
-  }
-
-  .logo-group {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-
-    img {
-      width: 24px;
-      height: 24px;
+    
+    input {
+      width: 248px;
+      height: 25px;
+      border: none;
+      border-radius: 50px;
+  
+      font-size: 13.3px;
+      text-indent: 10px;
+  
+      @include media.mobile { width: 100%; }
+  
+      &::placeholder { color: #757575; }
     }
-  }
-
-  .nav-group {
-    display: flex;
-    gap: 24px;
-
-    @include media.mobile {
-      flex-direction: column;
-      gap: 3px;
-    }
-  }
-
-  input {
-    width: 248px;
-    height: 25px;
-    border: none;
-    border-radius: 50px;
-
-    font-size: 13.3px;
-    text-indent: 10px;
-
-    @include media.mobile { width: 100%; }
-
-    &::placeholder { color: #757575; }
   }
 }
