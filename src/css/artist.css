@@ -185,6 +185,10 @@ section, footer, header {
 .btn {
   text-transform: capitalize;
   cursor: pointer;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 hr {

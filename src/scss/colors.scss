@@ -17,7 +17,6 @@ $colors: (
   }
   .bg-#{$k} {
     border-color: #{$v};
-
     background-color: #{$v};
   }
 }
