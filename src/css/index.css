@@ -389,7 +389,7 @@ header .header-container input::placeholder {
   color: #757575;
 }
 
-#page-description.background {
+.guitar-background {
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;

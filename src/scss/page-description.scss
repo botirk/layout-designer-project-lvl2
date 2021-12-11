@@ -1,7 +1,7 @@
 @use 'media.scss' as media;
 @use 'colors.scss' as *;
 
-#page-description.background {
+.guitar-background {
   background-image: url('../images/banner.png');
   background-position: center;
   background-size: cover;
