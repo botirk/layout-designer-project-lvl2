@@ -18,14 +18,14 @@
     margin-top: 16px;
   }
 
-  .buttons {
+  .btns {
     display: flex;
     @include media.mobile { flex-direction: column; }
     gap: 1.5rem;
 
     margin-top: 48px;
 
-    .button {
+    .btn {
       display: flex;
       align-items: center;
       gap: 16px;

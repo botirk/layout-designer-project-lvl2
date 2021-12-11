@@ -182,7 +182,7 @@ section, footer, header {
   }
 }
 
-.button {
+.btn {
   text-transform: capitalize;
   cursor: pointer;
 }
@@ -403,17 +403,17 @@ header .header-container input::placeholder {
 #page-description .counter {
   margin-top: 16px;
 }
-#page-description .buttons {
+#page-description .btns {
   display: flex;
   gap: 1.5rem;
   margin-top: 48px;
 }
 @media (max-width: 1239px) {
-  #page-description .buttons {
+  #page-description .btns {
     flex-direction: column;
   }
 }
-#page-description .buttons .button {
+#page-description .btns .btn {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -424,7 +424,7 @@ header .header-container input::placeholder {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-#page-description .buttons .button img {
+#page-description .btns .btn img {
   width: 20px;
   height: 20px;
 }
