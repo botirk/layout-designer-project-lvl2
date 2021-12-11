@@ -1,13 +1,15 @@
 @use 'media.scss' as media;
 @use 'colors.scss' as *;
 
-#page-description {
-  padding-top: 200px;
-  padding-bottom: 200px;
-
+#page-description.background {
   background-image: url('../images/banner.png');
   background-position: center;
   background-size: cover;
+}
+
+#page-description {
+  padding-top: 200px;
+  padding-bottom: 200px;
 
   .form-description {
     margin-top: 31px;
