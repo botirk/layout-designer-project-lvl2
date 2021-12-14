@@ -16,3 +16,8 @@ chmod:
 
 serve:
 	npx gulp
+
+build:
+	npx sass ./src/scss/index.scss ./src/css/index.css
+	npx sass ./src/scss/artist/index.scss ./src/css/artist.css
+
