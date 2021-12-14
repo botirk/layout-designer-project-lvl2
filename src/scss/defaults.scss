@@ -27,12 +27,13 @@
 }
 
 h1, h2, h3, h4 {
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 h1 {
   font-size: 60px;
   @include media.mobile { font-size: 30px; }
+  
 }
 
 h2 {
@@ -44,6 +45,7 @@ h3 {
   font-size: 24px;
   @include media.mobile { font-size: 16px; }
   font-weight: normal;
+  text-transform: capitalize;
 }
 
 h4 {
