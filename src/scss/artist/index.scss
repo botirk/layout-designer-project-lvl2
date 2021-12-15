@@ -1,5 +1,5 @@
 @use '../defaults.scss';
-@use 'defaults.scss';
+@use './defaults.scss' as artist-defaults;
 @use '../atomic.scss';
 @use '../colors.scss';
 
