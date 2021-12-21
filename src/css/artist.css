@@ -435,13 +435,11 @@ header .header-container input::placeholder {
   padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
+  text-transform: uppercase;
 }
 #page-description .btns .btn img {
   width: 20px;
   height: 20px;
-}
-#page-description .btns .btn p {
-  text-transform: uppercase;
 }
 
 #page-popular-track {
@@ -515,6 +513,7 @@ header .header-container input::placeholder {
 }
 #page-discography .disc-item .disc-name {
   margin-top: 18px;
+  text-transform: capitalize;
 }
 
 #page-similar {
@@ -549,6 +548,7 @@ header .header-container input::placeholder {
 }
 #page-similar .similar-item .similar-name {
   margin-top: 17px;
+  text-transform: capitalize;
 }
 #page-similar .similar-item .similar-counter {
   margin-top: 1px;
