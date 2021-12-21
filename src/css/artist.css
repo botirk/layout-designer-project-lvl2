@@ -440,6 +440,9 @@ header .header-container input::placeholder {
   width: 20px;
   height: 20px;
 }
+#page-description .btns .btn p {
+  text-transform: uppercase;
+}
 
 #page-popular-track {
   padding-top: 100px;
