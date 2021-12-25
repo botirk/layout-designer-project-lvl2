@@ -522,7 +522,7 @@ header .header-container input::placeholder {
 
 #page-similar {
   padding-top: 100px;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 #page-similar .container {
   align-items: start;
