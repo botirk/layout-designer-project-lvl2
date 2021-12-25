@@ -167,6 +167,14 @@ section, footer, header {
   align-items: center;
 }
 
+hr {
+  width: 100%;
+}
+
+img {
+  display: block;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -189,10 +197,6 @@ section, footer, header {
   padding-right: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-hr {
-  width: 100%;
 }
 
 h3 {
