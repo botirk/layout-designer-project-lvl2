@@ -554,9 +554,6 @@ header .header-container input::placeholder {
   margin-top: 17px;
   text-transform: capitalize;
 }
-#page-similar .similar-item .similar-counter {
-  margin-top: 1px;
-}
 
 footer {
   padding-top: 3rem;
