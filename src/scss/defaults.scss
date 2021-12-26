@@ -26,6 +26,12 @@
   line-height: 150%;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1, h2, h3, h4 {
   text-transform: uppercase;
 }
@@ -76,15 +82,11 @@ img { display: block; }
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  max-width: 1240px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 100%;
-
-  max-width: 1200px;
-
-  @include media.mobile {
-    width: calc(100% - 40px);
-    margin-right: 20px;
-    margin-left: 20px;
-  }
 }
 
 .btn {

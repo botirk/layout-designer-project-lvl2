@@ -6,135 +6,125 @@
     <title>layout-designer-project-lvl2 by botirk</title>
     <link href="css/index.css" rel="stylesheet">
   </head>
-  <body>
-    <header class="color-white fs-11">
-      <div class="container">
-        <div class="header-container">
-          <div class="header-left">
-            <div class="logo-group">
-              <img alt="нота" src="images/logo.svg"/>
-              <p class="site-name">MUSIC BOX</p>
-            </div>
-            <div class="nav-group">
-              <a><div>ГЛАВНАЯ</div></a>
-              <a><div class="color-dark-gray">КАТАЛОГ</div></a>
-              <a><div class="color-dark-gray">ИСПОЛНИТЕЛИ</div></a>
-              <a><div class="color-dark-gray">КОНТАКТЫ</div></a>
-            </div>
+  <body class="bg-black">
+    <header class="container color-white fs-11">
+      <div class="header-container">
+        <div class="header-left">
+          <div class="logo-group">
+            <img alt="нота" src="images/logo.svg"/>
+            <p class="site-name">MUSIC BOX</p>
           </div>
-          <input type="text" class="color-white bg-dark" placeholder="ПОИСК..." />
+          <div class="nav-group">
+            <a><div>ГЛАВНАЯ</div></a>
+            <a><div class="color-dark-gray">КАТАЛОГ</div></a>
+            <a><div class="color-dark-gray">ИСПОЛНИТЕЛИ</div></a>
+            <a><div class="color-dark-gray">КОНТАКТЫ</div></a>
+          </div>
         </div>
+        <input type="text" class="color-white bg-dark" placeholder="ПОИСК..." />
       </div>
     </header>
 
-    <section id="page-description" class="color-white">
-      <div class="container">
-        <h1 class="text-center w-100">Онлайн музыка где угодно</h1>
-        <h2 class="text-center w-100">без ограничений</h2>
-        
-        <p class="form-description fs-16 text-center w-100">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
-        <form>
-          <div class="form-inputs">
-            <input class="bg-transparent fs-14 br-3" type="text" name="name" placeholder="Имя" />
-            <input class="bg-transparent fs-14 br-3" type="email" name="email" placeholder="Email" />
-          </div>
-          <input class="btn bg-green fs-12-8 br-5" type="submit" value="ПОЛУЧИТЬ ДОСТУП"/>
-        </form>
-      </div>
+    <section id="page-description" class="container color-white">
+      <h1 class="text-center w-100">Онлайн музыка где угодно</h1>
+      <h2 class="text-center w-100">без ограничений</h2>
+      
+      <p class="form-description fs-16 text-center w-100">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+      <form>
+        <div class="form-inputs">
+          <input class="bg-transparent fs-14 br-3" type="text" name="name" placeholder="Имя" />
+          <input class="bg-transparent fs-14 br-3" type="email" name="email" placeholder="Email" />
+        </div>
+        <input class="btn bg-green fs-12-8 br-5" type="submit" value="ПОЛУЧИТЬ ДОСТУП"/>
+      </form>
     </section>
 
-    <section id="page-pricing" class="bg-black color-white">
-      <div class="container">
-        <h2>Формы подписки</h2>
+    <section id="page-pricing" class="container color-white">
+      <h2>Формы подписки</h2>
 
-        <div class="card-container">
+      <div class="card-container">
 
-          <div class="card">
-            <h3>Бесплатная</h3>
-            <p class="price">
-              <span class="fs-64 lh-100">0</span>
-              <span class="fs-32">РУБ.</span>
-            </p>
-            <button class="btn w-100 fs-16 br-5 bg-transparent">ОФОРМИТЬ</button>
-            <p class="description fs-12-8 text-center">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
-          </div>
-
-          <div class="card">
-            <h3>Стандартная</h3>
-            <p class="price">
-              <span class="fs-64 lh-100">250</span>
-              <span class="fs-32">РУБ.</span>
-            </p>
-            <button class="btn w-100 fs-16 br-5 bg-transparent">ОФОРМИТЬ</button>
-            <p class="description fs-12-8 text-center">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
-          </div>
-
-          <div class="card">
-            <h3>Бесплатная</h3>
-            <p class="price">
-              <span class="fs-64 lh-100">500</span>
-              <span class="fs-32">РУБ.</span>
-            </p>
-            <button class="btn w-100 fs-16 br-5 bg-transparent">ОФОРМИТЬ</button>
-            <p class="description fs-12-8 text-center">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
-          </div>
-          
+        <div class="card">
+          <h3>Бесплатная</h3>
+          <p class="price">
+            <span class="fs-64 lh-100">0</span>
+            <span class="fs-32">РУБ.</span>
+          </p>
+          <button class="btn w-100 fs-16 br-5 bg-transparent">ОФОРМИТЬ</button>
+          <p class="description fs-12-8 text-center">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
         </div>
 
-        <p class="text-center fs-16">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+        <div class="card">
+          <h3>Стандартная</h3>
+          <p class="price">
+            <span class="fs-64 lh-100">250</span>
+            <span class="fs-32">РУБ.</span>
+          </p>
+          <button class="btn w-100 fs-16 br-5 bg-transparent">ОФОРМИТЬ</button>
+          <p class="description fs-12-8 text-center">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
+        </div>
+
+        <div class="card">
+          <h3>Бесплатная</h3>
+          <p class="price">
+            <span class="fs-64 lh-100">500</span>
+            <span class="fs-32">РУБ.</span>
+          </p>
+          <button class="btn w-100 fs-16 br-5 bg-transparent">ОФОРМИТЬ</button>
+          <p class="description fs-12-8 text-center">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
+        </div>
+        
       </div>
+
+      <p class="text-center fs-16">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
     </section>
   
-    <section id="page-news" class="bg-black color-white">
-      <div class="container">
-        <h2 class="w-100 text-center">ПОСЛЕДНИЕ НОВОСТИ</h2>
-        
-        <div class="news-container">
-          <div class="news-item">
-            <img src="./images/Music to Be Murdered By.png" alt="Эминем с микрофоном">
-            <div class="news-body">
-              <h3 class="news-header fs-30 fsm-16 capitalize">Music to Be Murdered By</h3>
-              <p class="news-content fs-16">Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20 новых треков.</p>
-              <div class="news-info">
-                <img src="./images/avatar.png" alt="иконка">
-                <p class="color-orange fs-12">MUSIC BOX</p>
-                <p class="color-dark-gray fs-12">17/01/2020</p>
-              </div>
-              <button class="btn fs-12 bg-transparent color-dark-gray">К АЛЬБОМУ</button>
+    <section id="page-news" class="container color-white">
+      <h2 class="w-100 text-center">ПОСЛЕДНИЕ НОВОСТИ</h2>
+      
+      <div class="news-container">
+        <div class="news-item">
+          <img src="./images/Music to Be Murdered By.png" alt="Эминем с микрофоном">
+          <div class="news-body">
+            <h3 class="news-header fs-30 fsm-16 capitalize">Music to Be Murdered By</h3>
+            <p class="news-content fs-16">Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20 новых треков.</p>
+            <div class="news-info">
+              <img src="./images/avatar.png" alt="иконка">
+              <p class="color-orange fs-12">MUSIC BOX</p>
+              <p class="color-dark-gray fs-12">17/01/2020</p>
             </div>
+            <button class="btn fs-12 bg-transparent color-dark-gray">К АЛЬБОМУ</button>
           </div>
+        </div>
 
-          <div class="news-item">
-            <img src="./images/Ordinary Man.png" alt="Оззи Осборн">
-            <div class="news-body">
-              <h3 class="news-header fs-30 fsm-16 capitalize">Ordinary Man</h3>
-              <p class="news-content fs-16">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box</p>
-              <div class="news-info">
-                <img src="./images/avatar.png" alt="иконка">
-                <p class="color-orange fs-12-8">MUSIC BOX</p>
-                <p class="color-dark-gray fs-12-8">24/02/2020</p>
-              </div>
-              <button class="btn fs-12-8 bg-transparent color-dark-gray">К АЛЬБОМУ</button>
+        <div class="news-item">
+          <img src="./images/Ordinary Man.png" alt="Оззи Осборн">
+          <div class="news-body">
+            <h3 class="news-header fs-30 fsm-16 capitalize">Ordinary Man</h3>
+            <p class="news-content fs-16">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box</p>
+            <div class="news-info">
+              <img src="./images/avatar.png" alt="иконка">
+              <p class="color-orange fs-12-8">MUSIC BOX</p>
+              <p class="color-dark-gray fs-12-8">24/02/2020</p>
             </div>
+            <button class="btn fs-12-8 bg-transparent color-dark-gray">К АЛЬБОМУ</button>
           </div>
         </div>
       </div>
     </section>
   
-    <section id="page-app" class="bg-black color-white">
-      <div class="container">
-        <h2>МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</h2>
-        <div class="content-container">
-          <div class="text">
-            <p class="fs-16">
-              Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе операционных систем Androind и iOS
-              <br><br>
-              С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете слушать музыку даже без интернета.
-            </p>
-            <button class="btn bg-red fs-12-8">Скачать</button>
-          </div>
-          <img src="images/iphone.png" alt="IPhone"/>
+    <section id="page-app" class="container color-white">
+      <h2>МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</h2>
+      <div class="content-container">
+        <div class="text">
+          <p class="fs-16">
+            Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе операционных систем Androind и iOS
+            <br><br>
+            С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете слушать музыку даже без интернета.
+          </p>
+          <button class="btn bg-red fs-12-8">Скачать</button>
         </div>
+        <img src="images/iphone.png" alt="IPhone"/>
       </div>
     </section>
 
