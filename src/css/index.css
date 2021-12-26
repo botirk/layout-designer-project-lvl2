@@ -547,6 +547,11 @@ header .header-container input::placeholder {
 #page-news .news-content {
   margin-top: 30px;
 }
+@media (max-width: 1239px) {
+  #page-news .news-content {
+    margin-top: 16px;
+  }
+}
 #page-news .news-info {
   display: flex;
   gap: 16px;

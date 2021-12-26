@@ -38,6 +38,7 @@
 
   .news-content {
     margin-top: 30px;
+    @include media.mobile { margin-top: 16px; }
   }
 
   .news-info {
