@@ -4,58 +4,60 @@
 header {
   position: absolute;
   top: 25px;
+  @include media.mobile { top: 27px; }
   right: 0;
   left: 0;
+  margin: auto;
 
-  @include media.mobile { top: 27px; }
+  justify-content: space-between;
+  row-gap: 18px;
+  flex-direction: row !important;
+  @include media.mobile { flex-direction: column !important; }
+
+  .header-left {
+    display: flex;
+    column-gap: 90px;
+    row-gap: 17px;
+    @include media.desktop { align-items: center; }
+    @include media.mobile { flex-direction: column; }
+
+    .logo-group {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .site-name { margin-left: 16px; }
+    }
+    
+    .nav-group {
+      display: flex;
+      column-gap: 24px;
+      row-gap: 3px;
+      @include media.mobile { flex-direction: column; }
+    }
+  }
+  
+  input {
+    width: 248px;
+    height: 25px;
+    border: none;
+    border-radius: 50px;
+
+    font-size: 13.3px;
+    text-indent: 10px;
+
+    @include media.mobile { width: 100%; }
+
+    &::placeholder { color: #757575; }
+  }
 
   .header-container {
     width: 100%;
 
-    display: flex;
-    justify-content: space-between;
-    row-gap: 18px;
-    @include media.mobile { flex-direction: column; }
-
-    .header-left {
-      display: flex;
-      column-gap: 90px;
-      row-gap: 17px;
-      @include media.desktop { align-items: center; }
-      @include media.mobile { flex-direction: column; }
-
-      .logo-group {
-        display: flex;
-        align-items: center;
-
-        img {
-          width: 24px;
-          height: 24px;
-        }
-
-        .site-name { margin-left: 16px; }
-      }
-      
-      .nav-group {
-        display: flex;
-        column-gap: 24px;
-        row-gap: 3px;
-        @include media.mobile { flex-direction: column; }
-      }
-    }
     
-    input {
-      width: 248px;
-      height: 25px;
-      border: none;
-      border-radius: 50px;
-  
-      font-size: 13.3px;
-      text-indent: 10px;
-  
-      @include media.mobile { width: 100%; }
-  
-      &::placeholder { color: #757575; }
-    }
   }
 }
