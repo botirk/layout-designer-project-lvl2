@@ -6,209 +6,197 @@
     <title>layout-designer-project-lvl2 by botirk</title>
     <link href="css/artist.css" rel="stylesheet">
   </head>
-  <body>
-    <header class="color-white fs-11">
-      <div class="container">
-        <div class="header-container">
-          <div class="header-left">
-            <div class="logo-group">
-              <img alt="нота" src="images/logo.svg"/>
-              <p class="site-name">MUSIC BOX</p>
-            </div>
-            <div class="nav-group">
-              <a><div>ГЛАВНАЯ</div></a>
-              <a><div class="color-dark-gray">КАТАЛОГ</div></a>
-              <a><div class="color-dark-gray">ИСПОЛНИТЕЛИ</div></a>
-              <a><div class="color-dark-gray">КОНТАКТЫ</div></a>
-            </div>
-          </div>
-          <input type="text" class="color-white bg-dark" placeholder="ПОИСК..." />
+  <body class="bg-black">
+    <header class="container color-white fs-11">
+      <div class="header-left">
+        <div class="logo-group">
+          <img alt="нота" src="images/logo.svg"/>
+          <p class="site-name">MUSIC BOX</p>
+        </div>
+        <div class="nav-group">
+          <a><div>ГЛАВНАЯ</div></a>
+          <a><div class="color-dark-gray">КАТАЛОГ</div></a>
+          <a><div class="color-dark-gray">ИСПОЛНИТЕЛИ</div></a>
+          <a><div class="color-dark-gray">КОНТАКТЫ</div></a>
         </div>
       </div>
+      <input type="text" class="color-white bg-dark" placeholder="ПОИСК..." />
     </header>
 
-    <section id="page-description" class="color-white">
-      <div class="container">
-        <h1>Morten Harket</h1>
-        <p class="counter fs-16">24 875 поклонников</p>
-        <div class="btns">
-          <button class="btn bg-purple fs-12-8">
-            <img src="images/play-button.svg" alt="play">
-            <p>МИКС</p>
-          </button>
+    <section id="page-description" class="container color-white">
+      <h1>Morten Harket</h1>
+      <p class="counter fs-16">24 875 поклонников</p>
+      <div class="btns">
+        <button class="btn bg-purple fs-12-8">
+          <img src="images/play-button.svg" alt="play">
+          <p>МИКС</p>
+        </button>
 
-          <button class="btn bg-red fs-12-8">
-            <img src="images/heart.svg" alt="like">
-            <p>В ИЗБРАННОЕ</p>
-          </button>
-        </div>
+        <button class="btn bg-red fs-12-8">
+          <img src="images/heart.svg" alt="like">
+          <p>В ИЗБРАННОЕ</p>
+        </button>
       </div>
     </section>
 
-    <section id="page-popular-track" class="color-white bg-black">
-      <div class="container">
-        <h2 class="fsm-18">ПОПУЛЯРНЫЕ ТРЕКИ</h2>
+    <section id="page-popular-track" class="container color-white bg-black">
+      <h2 class="fsm-18">ПОПУЛЯРНЫЕ ТРЕКИ</h2>
 
-        <div class="track-container">
-          <div class="track-row">
-            <div class="track">
-              <img src="./images/Wild Seed.png" alt="Wild Seed">
-              <div class="track-info">
-                <h3 class="fs-12-8"><b>SPANISH STEP</b></h3>
-                <p class="fs-12-8 color-gray">Morten Harket</p>
-              </div>
-              <p class="track-length fs-12-8 color-gray">4:07</p>
-            </div>
-            
-            <div class="track">
-              <img src="./images/Letter from Egypt.png" alt="Letter from Egypt">
-              <div class="track-info">
-                <h3 class="fs-12-8"><b>WITH YOU - WITH ME</b></h3>
-                <p class="fs-12-8 color-gray">Morten Harket</p>
-              </div>
-              <p class="track-length fs-12-8 color-gray">3:48</p>
-            </div>
-          </div>
-          
-          <div class="track-row">
-            <div class="track">
-              <img src="./images/Brother.png" alt="Brother">
-              <div class="track-info">
-                <h3 class="fs-12-8"><b>BROTHER</b></h3>
-                <p class="fs-12-8 color-gray">Morten Harket</p>
-              </div>
-              <p class="track-length fs-12-8 color-gray">5:05</p>
-            </div>
-
-            <div class="track">
-              <img src="./images/Wild Seed.png" alt="Wild Seed">
-              <div class="track-info">
-                <h3 class="fs-12-8"><b>BRODSKY TUNE</b></h3>
-                <p class="fs-12-8 color-gray">Morten Harket</p>
-              </div>
-              <p class="track-length fs-12-8 color-gray">4:24</p>
-            </div>
-          </div>
-
-          <div class="track-row">
-            <div class="track">
-              <img src="./images/Letter from Egypt.png" alt="Letter from Egypt">
-              <div class="track-info">
-                <h3 class="fs-12-8"><b>DARKSPACE</b></h3>
-                <p class="fs-12-8 color-gray">Morten Harket</p>
-              </div>
-              <p class="track-length fs-12-8 color-gray">3:45</p>
-            </div>
-
-            <div class="track">
-              <img src="./images/Out of My Hands.png" alt="Out of My Hands">
-              <div class="track-info">
-                <h3 class="fs-12-8"><b>BURN MONEY BURN</b></h3>
-                <p class="fs-12-8 color-gray">Morten Harket</p>
-              </div>
-              <p class="track-length fs-12-8 color-gray">3:52</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="page-discography" class="color-white bg-black">
-      <div class="container">
-        <h2 class="w-100 fsm-18">ДИСКОГРАФИЯ</h2>
-
-        <div class="disc-container">
-          <div class="disc-item">
-            <img src="./images/Brother.png" alt="Brother">
-            <h3 class="disc-name fs-18">Brother</h3>
-            <p class="disc-year fs-16 color-gray">2014</p>
-          </div>
-          
-          <div class="disc-item">
-            <img src="./images/Out of My Hands.png" alt="Out of My Hands">
-            <h3 class="disc-name fs-18">Out Of My Hands</h3>
-            <p class="disc-year fs-16 color-gray">2012</p>
-          </div>
-
-          <div class="disc-item">
-            <img src="./images/Letter from Egypt.png" alt="Letter from Egypt">
-            <h3 class="disc-name fs-18">Letter from Egypt</h3>
-            <p class="disc-year fs-16 color-gray">2008</p>
-          </div>
-
-          <div class="disc-item">
-            <img src="./images/Vogts Villa.png" alt="Vogts Villa">
-            <h3 class="disc-name fs-18">Vogts Vills</h3>
-            <p class="disc-year fs-16 color-gray">1996</p>
-          </div>
-
-          <div class="disc-item">
+      <div class="track-container">
+        <div class="track-row">
+          <div class="track">
             <img src="./images/Wild Seed.png" alt="Wild Seed">
-            <h3 class="disc-name fs-18">Wild Seed</h3>
-            <p class="disc-year fs-16 color-gray">1995</p>
+            <div class="track-info">
+              <h3 class="fs-12-8"><b>SPANISH STEP</b></h3>
+              <p class="fs-12-8 color-gray">Morten Harket</p>
+            </div>
+            <p class="track-length fs-12-8 color-gray">4:07</p>
+          </div>
+          
+          <div class="track">
+            <img src="./images/Letter from Egypt.png" alt="Letter from Egypt">
+            <div class="track-info">
+              <h3 class="fs-12-8"><b>WITH YOU - WITH ME</b></h3>
+              <p class="fs-12-8 color-gray">Morten Harket</p>
+            </div>
+            <p class="track-length fs-12-8 color-gray">3:48</p>
+          </div>
+        </div>
+        
+        <div class="track-row">
+          <div class="track">
+            <img src="./images/Brother.png" alt="Brother">
+            <div class="track-info">
+              <h3 class="fs-12-8"><b>BROTHER</b></h3>
+              <p class="fs-12-8 color-gray">Morten Harket</p>
+            </div>
+            <p class="track-length fs-12-8 color-gray">5:05</p>
           </div>
 
-          <div class="disc-item">
-            <img src="./images/Poetenes Evangelium.png" alt="Poetenes Evangelium">
-            <h3 class="disc-name fs-18">Poetenes Evangelium</h3>
-            <p class="disc-year fs-16 color-gray">1993</p>
+          <div class="track">
+            <img src="./images/Wild Seed.png" alt="Wild Seed">
+            <div class="track-info">
+              <h3 class="fs-12-8"><b>BRODSKY TUNE</b></h3>
+              <p class="fs-12-8 color-gray">Morten Harket</p>
+            </div>
+            <p class="track-length fs-12-8 color-gray">4:24</p>
+          </div>
+        </div>
+
+        <div class="track-row">
+          <div class="track">
+            <img src="./images/Letter from Egypt.png" alt="Letter from Egypt">
+            <div class="track-info">
+              <h3 class="fs-12-8"><b>DARKSPACE</b></h3>
+              <p class="fs-12-8 color-gray">Morten Harket</p>
+            </div>
+            <p class="track-length fs-12-8 color-gray">3:45</p>
+          </div>
+
+          <div class="track">
+            <img src="./images/Out of My Hands.png" alt="Out of My Hands">
+            <div class="track-info">
+              <h3 class="fs-12-8"><b>BURN MONEY BURN</b></h3>
+              <p class="fs-12-8 color-gray">Morten Harket</p>
+            </div>
+            <p class="track-length fs-12-8 color-gray">3:52</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="page-similar" class="color-white bg-black">
-      <div class="container">
-        <h2 class="w-100 fsm-18">ПОХОЖИЕ ИСПОЛЬНИТЕЛИ</h2>
+    <section id="page-discography" class="container color-white bg-black">
+      <h2 class="w-100 fsm-18">ДИСКОГРАФИЯ</h2>
 
-        <div class="similar-container">
-          <div class="similar-item">
-            <img src="./images/A-ha.png" alt="A-ha">
-            <h3 class="similar-name fs-18 text-center">A-ha</h3>
-            <p class="fs-16 color-gray text-center">417 086 поклонников</p>
-          </div>
+      <div class="disc-container">
+        <div class="disc-item">
+          <img src="./images/Brother.png" alt="Brother">
+          <h3 class="disc-name fs-18">Brother</h3>
+          <p class="disc-year fs-16 color-gray">2014</p>
+        </div>
+        
+        <div class="disc-item">
+          <img src="./images/Out of My Hands.png" alt="Out of My Hands">
+          <h3 class="disc-name fs-18">Out Of My Hands</h3>
+          <p class="disc-year fs-16 color-gray">2012</p>
+        </div>
 
-          <div class="similar-item">
-            <img src="./images/Tears for Fears.png" alt="Tears For Fears">
-            <h3 class="similar-name fs-18 text-center">Tears For Fears</h3>
-            <p class="fs-16 color-gray text-center">434 086 поклонников</p>
-          </div>
+        <div class="disc-item">
+          <img src="./images/Letter from Egypt.png" alt="Letter from Egypt">
+          <h3 class="disc-name fs-18">Letter from Egypt</h3>
+          <p class="disc-year fs-16 color-gray">2008</p>
+        </div>
 
-          <div class="similar-item">
-            <img src="./images/Duran Duran.png" alt="Duran Duran">
-            <h3 class="similar-name fs-18 text-center">Duran Duran</h3>
-            <p class="fs-16 color-gray text-center">631 071 поклонник</p>
-          </div>
+        <div class="disc-item">
+          <img src="./images/Vogts Villa.png" alt="Vogts Villa">
+          <h3 class="disc-name fs-18">Vogts Vills</h3>
+          <p class="disc-year fs-16 color-gray">1996</p>
+        </div>
 
-          <div class="similar-item">
-            <img src="./images/Jack Savoretti.png" alt="Jack Savoretti">
-            <h3 class="similar-name fs-18 text-center">Jack Savoretti</h3>
-            <p class="fs-16 color-gray text-center">26 857 поклонников</p>
-          </div>
+        <div class="disc-item">
+          <img src="./images/Wild Seed.png" alt="Wild Seed">
+          <h3 class="disc-name fs-18">Wild Seed</h3>
+          <p class="disc-year fs-16 color-gray">1995</p>
+        </div>
 
-          <div class="similar-item">
-            <img src="./images/Keane.png" alt="Keane">
-            <h3 class="similar-name fs-18 text-center">Keane</h3>
-            <p class="fs-16 color-gray text-center">1 704 358 поклонников</p>
-          </div>
+        <div class="disc-item">
+          <img src="./images/Poetenes Evangelium.png" alt="Poetenes Evangelium">
+          <h3 class="disc-name fs-18">Poetenes Evangelium</h3>
+          <p class="disc-year fs-16 color-gray">1993</p>
+        </div>
+      </div>
+    </section>
 
-          <div class="similar-item">
-            <img src="./images/Frank Sinatra.png" alt="Frank Sinatra">
-            <h3 class="similar-name fs-18 text-center">Frank Sinatra</h3>
-            <p class="fs-16 color-gray text-center">1 653 882 поклонников</p>
-          </div>
+    <section id="page-similar" class="container color-white bg-black">
+      <h2 class="w-100 fsm-18">ПОХОЖИЕ ИСПОЛЬНИТЕЛИ</h2>
 
-          <div class="similar-item">
-            <img src="./images/Paul Young.png" alt="Paul Young">
-            <h3 class="similar-name fs-18 text-center">Paul Young</h3>
-            <p class="fs-16 color-gray text-center">50 329 поклонников</p>
-          </div>
+      <div class="similar-container">
+        <div class="similar-item">
+          <img src="./images/A-ha.png" alt="A-ha">
+          <h3 class="similar-name fs-18 text-center">A-ha</h3>
+          <p class="fs-16 color-gray text-center">417 086 поклонников</p>
+        </div>
 
-          <div class="similar-item">
-            <img src="./images/Chris Rea.png" alt="Chris Rea">
-            <h3 class="similar-name fs-18 text-center">Chris Rea</h3>
-            <p class="fs-16 color-gray text-center">73 351 поклонников</p>
-          </div>
+        <div class="similar-item">
+          <img src="./images/Tears for Fears.png" alt="Tears For Fears">
+          <h3 class="similar-name fs-18 text-center">Tears For Fears</h3>
+          <p class="fs-16 color-gray text-center">434 086 поклонников</p>
+        </div>
+
+        <div class="similar-item">
+          <img src="./images/Duran Duran.png" alt="Duran Duran">
+          <h3 class="similar-name fs-18 text-center">Duran Duran</h3>
+          <p class="fs-16 color-gray text-center">631 071 поклонник</p>
+        </div>
+
+        <div class="similar-item">
+          <img src="./images/Jack Savoretti.png" alt="Jack Savoretti">
+          <h3 class="similar-name fs-18 text-center">Jack Savoretti</h3>
+          <p class="fs-16 color-gray text-center">26 857 поклонников</p>
+        </div>
+
+        <div class="similar-item">
+          <img src="./images/Keane.png" alt="Keane">
+          <h3 class="similar-name fs-18 text-center">Keane</h3>
+          <p class="fs-16 color-gray text-center">1 704 358 поклонников</p>
+        </div>
+
+        <div class="similar-item">
+          <img src="./images/Frank Sinatra.png" alt="Frank Sinatra">
+          <h3 class="similar-name fs-18 text-center">Frank Sinatra</h3>
+          <p class="fs-16 color-gray text-center">1 653 882 поклонников</p>
+        </div>
+
+        <div class="similar-item">
+          <img src="./images/Paul Young.png" alt="Paul Young">
+          <h3 class="similar-name fs-18 text-center">Paul Young</h3>
+          <p class="fs-16 color-gray text-center">50 329 поклонников</p>
+        </div>
+
+        <div class="similar-item">
+          <img src="./images/Chris Rea.png" alt="Chris Rea">
+          <h3 class="similar-name fs-18 text-center">Chris Rea</h3>
+          <p class="fs-16 color-gray text-center">73 351 поклонников</p>
         </div>
       </div>
     </section>

@@ -409,6 +409,9 @@ header .header-container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+#page-description.container {
+  max-width: 100%;
+}
 #page-description .container {
   align-items: start;
 }

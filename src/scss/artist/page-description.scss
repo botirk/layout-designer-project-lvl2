@@ -1,6 +1,8 @@
 @use '../media.scss' as media;
 
 #page-description {
+  &.container { max-width: 100%; }
+
   background-color: transparent;
   background-image: url('../images/Morten Harket.png');
   background-position: center;
