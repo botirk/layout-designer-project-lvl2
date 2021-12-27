@@ -638,6 +638,8 @@ footer .column .icons {
 footer hr {
   margin-top: 72px;
   margin-bottom: 40px;
+  height: 2px;
+  width: calc(100vw - 20px);
 }
 footer .end-container {
   display: flex;
