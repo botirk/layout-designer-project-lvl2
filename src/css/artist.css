@@ -413,6 +413,7 @@ header .header-container {
   max-width: 100%;
 }
 #page-description .container {
+  margin-top: 50px;
   align-items: start;
 }
 #page-description .counter {

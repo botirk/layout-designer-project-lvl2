@@ -12,7 +12,10 @@
   //@include media.mobile { padding-top: 250px; }
   padding-bottom: 200px;
 
-  .container { align-items: start; }
+  .container { 
+    margin-top: 50px;
+    align-items: start; 
+  }
   
   .counter { margin-top: 16px; }
 
