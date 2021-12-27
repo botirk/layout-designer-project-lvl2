@@ -335,6 +335,9 @@ header {
   row-gap: 18px;
   flex-direction: row !important;
 }
+header.container {
+  align-items: start;
+}
 @media (max-width: 1239px) {
   header {
     top: 27px;
@@ -413,6 +416,7 @@ header .header-container {
   max-width: 100%;
 }
 #page-description .container {
+  padding: 0;
   margin-top: 50px;
   align-items: start;
 }

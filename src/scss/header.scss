@@ -1,7 +1,8 @@
-@use 'colors.scss' as *;
 @use 'media.scss' as media;
 
 header {
+  &.container { align-items: start; }
+
   position: absolute;
   top: 25px;
   @include media.mobile { top: 27px; }

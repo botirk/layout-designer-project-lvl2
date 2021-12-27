@@ -331,6 +331,9 @@ header {
   row-gap: 18px;
   flex-direction: row !important;
 }
+header.container {
+  align-items: start;
+}
 @media (max-width: 1239px) {
   header {
     top: 27px;
