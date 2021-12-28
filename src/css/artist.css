@@ -346,7 +346,7 @@ header.container {
 header .header-left {
   display: flex;
   column-gap: 90px;
-  row-gap: 17px;
+  row-gap: 16px;
 }
 @media (min-width: 1240px) {
   header .header-left {

@@ -17,7 +17,7 @@ header {
   .header-left {
     display: flex;
     column-gap: 90px;
-    row-gap: 17px;
+    row-gap: 16px;
     @include media.desktop { align-items: center; }
     @include media.mobile { flex-direction: column; }
 
