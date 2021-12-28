@@ -156,7 +156,6 @@ h4 {
 }
 
 a {
-  display: block;
   color: inherit;
   text-decoration: none;
 }
@@ -379,7 +378,10 @@ header .header-left ul {
     flex-direction: column;
   }
 }
-header .header-left ul a {
+header .header-left ul li {
+  line-height: 100%;
+}
+header .header-left ul li a {
   line-height: 13px;
 }
 header input {

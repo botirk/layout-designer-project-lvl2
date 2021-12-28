@@ -9,12 +9,12 @@
   background-size: cover;
 
   padding-top: 200px;
-  //@include media.mobile { padding-top: 250px; }
   padding-bottom: 200px;
 
   .container {
     padding: 0;
-    margin-top: 25px;
+    margin-top: 50px;
+    @include media.mobile { margin-top: 25px; }
     align-items: start; 
   }
   
