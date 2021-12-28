@@ -446,8 +446,8 @@ header input::placeholder {
   width: 200px;
   padding-right: 30px;
   padding-left: 30px;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-transform: uppercase;
 }
 #page-description .btns .btn img {
