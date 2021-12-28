@@ -366,12 +366,9 @@ header .header-left .logo-group .site-name {
   margin-left: 16px;
 }
 header .header-left ul {
+  list-style-type: none;
   display: flex;
   column-gap: 24px;
-  row-gap: 3px;
-  padding-top: 1px;
-  padding-bottom: 2px;
-  list-style-type: none;
 }
 @media (max-width: 1239px) {
   header .header-left ul {
@@ -379,6 +376,8 @@ header .header-left ul {
   }
 }
 header .header-left ul li {
+  padding-top: 1px;
+  padding-bottom: 2px;
   line-height: 100%;
 }
 header .header-left ul li a {
@@ -386,7 +385,7 @@ header .header-left ul li a {
 }
 header input {
   width: 248px;
-  height: 25px;
+  height: 26px;
   border: none;
   border-radius: 50px;
   font-size: 13.3px;

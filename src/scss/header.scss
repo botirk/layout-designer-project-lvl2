@@ -34,26 +34,25 @@ header {
     }
     
     ul {
+      list-style-type: none;
+
       display: flex;
       @include media.mobile { flex-direction: column; }
       column-gap: 24px;
-      row-gap: 3px;
       
-      padding-top: 1px;
-      padding-bottom: 2px;
-
-      list-style-type: none;
       li {
+        padding-top: 1px;
+        padding-bottom: 2px;
+
         line-height: 100%;
         a { line-height: 13px; }
       }
-      
     }
   }
   
   input {
     width: 248px;
-    height: 25px;
+    height: 26px;
     border: none;
     border-radius: 50px;
 
