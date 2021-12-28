@@ -328,7 +328,7 @@ header {
   left: 0;
   margin: auto;
   justify-content: space-between;
-  row-gap: 18px;
+  row-gap: 16px;
   flex-direction: row !important;
 }
 header.container {
