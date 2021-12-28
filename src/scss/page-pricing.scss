@@ -32,13 +32,13 @@
     @include media.mobile { width: calc(100vw - 40px); }
 
     h3 {
-      margin-top: 24px;
+      margin-top: 25px;
       margin-bottom: 200px;
     }
 
     .price {
       display: flex;
-      align-content: flex-start;
+      justify-content: center;
 
       margin-bottom: 40px;
       span:nth-child(1) { margin-right: 1rem; }
