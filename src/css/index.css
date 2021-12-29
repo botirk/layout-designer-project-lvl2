@@ -595,7 +595,7 @@ header input::placeholder {
 }
 
 #page-app {
-  margin-top: 100px;
+  padding-top: 100px;
   margin-bottom: 100px;
 }
 #page-app .content-container {
@@ -613,9 +613,12 @@ header input::placeholder {
 }
 #page-app p {
   max-width: 600px;
+}
+#page-app p:first {
   margin-top: 16px;
 }
 #page-app .btn {
+  display: inline-block;
   margin-top: 16px;
   padding-top: 16px;
   padding-right: 40px;
