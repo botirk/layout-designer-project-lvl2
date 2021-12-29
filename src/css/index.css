@@ -466,7 +466,12 @@ header input::placeholder {
   flex-wrap: wrap;
   gap: 50px;
   margin-top: 45px;
-  margin-bottom: 20px;
+  margin-bottom: 43px;
+}
+@media (max-width: 1239px) {
+  #page-pricing .card-container {
+    margin-bottom: 19px;
+  }
 }
 #page-pricing .card {
   display: flex;
@@ -480,6 +485,11 @@ header input::placeholder {
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 1239px) {
+  #page-pricing .card {
+    width: calc(100vw - 40px);
+  }
+}
 #page-pricing .card:nth-child(1) {
   background-image: url("../images/subscribe_1.png");
 }
@@ -488,11 +498,6 @@ header input::placeholder {
 }
 #page-pricing .card:nth-child(3) {
   background-image: url("../images/subscribe_3.png");
-}
-@media (max-width: 1239px) {
-  #page-pricing .card {
-    width: calc(100vw - 40px);
-  }
 }
 #page-pricing .card h3 {
   margin-top: 25px;

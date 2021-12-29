@@ -8,7 +8,8 @@
     flex-wrap: wrap;
     gap: 50px;
     margin-top: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 43px;
+    @include media.mobile { margin-bottom: 19px; }
   }
 
   .card {
@@ -16,6 +17,7 @@
     flex-direction: column;
     align-items: center;
     width: 366px;
+    @include media.mobile { width: calc(100vw - 40px); }
 
     height: 615px;
     padding-right: 1.5rem;
@@ -28,8 +30,6 @@
     &:nth-child(1) { background-image: url('../images/subscribe_1.png'); }
     &:nth-child(2) { background-image: url('../images/subscribe_2.png'); }
     &:nth-child(3) { background-image: url('../images/subscribe_3.png'); }
-
-    @include media.mobile { width: calc(100vw - 40px); }
 
     h3 {
       margin-top: 25px;
