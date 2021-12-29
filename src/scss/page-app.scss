@@ -20,17 +20,17 @@
     width: 100%;
     margin-top: 48px;
 
+    p {
+      max-width: 600px;
+      &:first-child {
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+    }
+
     img {
       width: 333px;
       height: 278px;
-    }
-  }
-
-  p {
-    max-width: 600px;
-    &:first { 
-      margin-top: 16px;
-      margin-bottom: 16px;
     }
   }
 
