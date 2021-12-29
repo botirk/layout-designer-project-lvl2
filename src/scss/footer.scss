@@ -1,7 +1,7 @@
 @use 'media.scss' as media;
 
 footer {
-  &.container { max-width: 100%; }
+  width: 100%;
   padding-top: calc(3rem + 2px);
   padding-bottom: 2rem;
 
@@ -17,8 +17,8 @@ footer {
   }
 
   .column {
-    width: 270px;
-    @include media.mobile { width: 100%; }
+    min-width: 270px;
+    flex-grow: 1;
 
     h2 { margin-bottom: 15px; }
 
@@ -42,7 +42,7 @@ footer {
     margin-top: 72px;
     margin-bottom: 40px;
     height: 2px;
-    width: calc(100vw - 20px);
+    width: 100%;
   }
 
   .end-container {
