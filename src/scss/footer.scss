@@ -1,7 +1,7 @@
 @use 'media.scss' as media;
 
 footer {
-  width: 100%;
+  &.container { max-width: 100%; }
   padding-top: calc(3rem + 2px);
   padding-bottom: 2rem;
 
