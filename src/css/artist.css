@@ -597,12 +597,6 @@ footer .column ul li {
   padding-bottom: 3px;
   line-height: 24px;
 }
-footer .column ul li a {
-  line-height: 19px;
-}
-footer .column a {
-  display: block;
-}
 footer .column .icons {
   display: flex;
   gap: 24px;
