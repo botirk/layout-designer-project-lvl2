@@ -592,11 +592,6 @@ footer .column h2 {
 footer .column ul {
   list-style-type: none;
 }
-footer .column ul li {
-  padding-top: 2px;
-  padding-bottom: 3px;
-  line-height: 24px;
-}
 footer .column .icons {
   display: flex;
   gap: 24px;
