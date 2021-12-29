@@ -9,16 +9,15 @@ footer {
 
   .urls-container {
     display: flex;
-    flex-grow: 1;
-    gap: 40px;
+    column-gap: 40px;
+    row-gap: 30px;
+    @include media.mobile { flex-direction: column; }
 
     width: 100%;
-
-    @include media.mobile { flex-direction: column; }
   }
 
   .column {
-    flex-basis: 270px;
+    width: 270px;
 
     h2 { margin-bottom: 15px; }
 
@@ -42,7 +41,7 @@ footer {
     margin-top: 72px;
     margin-bottom: 40px;
     height: 2px;
-    width: calc(100vw);
+    width: calc(100vw - 20px);
   }
 
   .end-container {

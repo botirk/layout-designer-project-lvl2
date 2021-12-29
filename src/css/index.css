@@ -630,8 +630,8 @@ footer.container {
 }
 footer .urls-container {
   display: flex;
-  flex-grow: 1;
-  gap: 40px;
+  column-gap: 40px;
+  row-gap: 30px;
   width: 100%;
 }
 @media (max-width: 1239px) {
@@ -640,7 +640,7 @@ footer .urls-container {
   }
 }
 footer .column {
-  flex-basis: 270px;
+  width: 270px;
 }
 footer .column h2 {
   margin-bottom: 15px;
@@ -664,7 +664,7 @@ footer hr {
   margin-top: 72px;
   margin-bottom: 40px;
   height: 2px;
-  width: calc(100vw);
+  width: calc(100vw - 20px);
 }
 footer .end-container {
   display: flex;
