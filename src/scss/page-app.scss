@@ -6,15 +6,10 @@
 
   .content-container {
     display: flex;
-    @include media.mobile { align-items: center; }
-
-    
-    gap: 144px;
-
-    @include media.mobile {
-      flex-direction: column-reverse;
-      flex-wrap: wrap;
-      gap: 16px;
+    column-gap: 144px;
+    @include media.mobile { 
+      flex-direction: column-reverse; 
+      align-items: center; 
     }
 
     width: 100%;
