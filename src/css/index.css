@@ -498,6 +498,11 @@ header input::placeholder {
   margin-top: 25px;
   margin-bottom: 200px;
 }
+@media (max-width: 1239px) {
+  #page-pricing .card h3 {
+    margin-top: 15px;
+  }
+}
 #page-pricing .card .price {
   display: flex;
   justify-content: center;

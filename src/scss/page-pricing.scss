@@ -33,6 +33,7 @@
 
     h3 {
       margin-top: 25px;
+      @include media.mobile { margin-top: 15px; }
       margin-bottom: 200px;
     }
 
