@@ -3,6 +3,7 @@
 #page-description {
   &.container { max-width: 100%; }
   padding-top: 200px;
+  @include media.mobile { padding-top: 250px; }
   padding-bottom: 200px;
 
   background-image: url('../images/banner.png');
