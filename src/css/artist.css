@@ -569,12 +569,13 @@ header input::placeholder {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   padding-top: calc(3rem + 2px);
   padding-bottom: 2rem;
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
-}
-footer.container {
-  max-width: 100%;
 }
 footer .urls-container {
   display: flex;
