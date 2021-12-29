@@ -415,8 +415,8 @@ header input::placeholder {
   max-width: 100%;
 }
 @media (max-width: 1239px) {
-  #page-description {
-    padding-top: 250px;
+  #page-description .mobile-50 {
+    height: 50px;
   }
 }
 #page-description .form-description {
