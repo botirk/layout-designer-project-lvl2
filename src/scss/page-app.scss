@@ -6,6 +6,9 @@
 
   .content-container {
     display: flex;
+    @include media.mobile { align-items: center; }
+
+    
     gap: 144px;
 
     @include media.mobile {
@@ -16,11 +19,19 @@
 
     width: 100%;
     margin-top: 48px;
+
+    img {
+      width: 333px;
+      height: 278px;
+    }
   }
 
   p {
     max-width: 600px;
-    &:first { margin-top: 16px; }
+    &:first { 
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
   }
 
   .btn {

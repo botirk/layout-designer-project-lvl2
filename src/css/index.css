@@ -606,16 +606,26 @@ header input::placeholder {
 }
 @media (max-width: 1239px) {
   #page-app .content-container {
+    align-items: center;
+  }
+}
+@media (max-width: 1239px) {
+  #page-app .content-container {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     gap: 16px;
   }
+}
+#page-app .content-container img {
+  width: 333px;
+  height: 278px;
 }
 #page-app p {
   max-width: 600px;
 }
 #page-app p:first {
   margin-top: 16px;
+  margin-bottom: 16px;
 }
 #page-app .btn {
   display: inline-block;
