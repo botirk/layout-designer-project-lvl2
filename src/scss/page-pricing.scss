@@ -18,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     width: 366px;
-    max-width: calc(100vw - 40px);
+    @include media.mobile { width: calc(100vw - 40px); }
 
     height: 615px;
     padding-right: 1.5rem;

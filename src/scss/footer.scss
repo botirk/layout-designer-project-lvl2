@@ -18,9 +18,23 @@ footer {
   }
 
   .column {
-    flex-grow: 1;
+    flex-basis: 270px;
 
-    h4 { margin-bottom: 15px; }
+    h2 { margin-bottom: 15px; }
+
+    ul {
+      list-style-type: none;
+      
+      li {
+        padding-top: 2px;
+        padding-bottom: 3px;
+
+        line-height: 24px;
+        a { line-height: 19px; }
+      }
+    }
+
+    
     a { display: block; }
 
     .icons {

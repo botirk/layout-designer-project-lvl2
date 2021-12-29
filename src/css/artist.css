@@ -584,10 +584,21 @@ footer .urls-container {
   }
 }
 footer .column {
-  flex-grow: 1;
+  flex-basis: 270px;
 }
-footer .column h4 {
+footer .column h2 {
   margin-bottom: 15px;
+}
+footer .column ul {
+  list-style-type: none;
+}
+footer .column ul li {
+  padding-top: 2px;
+  padding-bottom: 3px;
+  line-height: 24px;
+}
+footer .column ul li a {
+  line-height: 19px;
 }
 footer .column a {
   display: block;
