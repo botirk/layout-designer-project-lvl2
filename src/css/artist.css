@@ -573,14 +573,14 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top: calc(3rem + 2px);
+  padding-top: calc(3rem + 3px);
   padding-bottom: 2rem;
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 footer .urls-container {
   display: flex;
   column-gap: 40px;
-  row-gap: 30px;
+  row-gap: 31px;
   width: 100%;
 }
 @media (max-width: 1239px) {
