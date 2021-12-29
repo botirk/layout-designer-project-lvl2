@@ -569,7 +569,7 @@ header input::placeholder {
 }
 
 footer {
-  padding-top: 3rem;
+  padding-top: calc(3rem + 2px);
   padding-bottom: 2rem;
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
@@ -599,13 +599,20 @@ footer .column ul {
 footer .column .icons {
   display: flex;
   gap: 24px;
-  align-items: center;
+}
+footer .column .icons a {
+  height: 24px;
+  display: flex;
+  align-items: flex-end;
+}
+footer .column .icons a img {
+  margin-bottom: 1px;
 }
 footer hr {
   margin-top: 72px;
   margin-bottom: 40px;
   height: 2px;
-  width: calc(100vw - 20px);
+  width: calc(100vw);
 }
 footer .end-container {
   display: flex;

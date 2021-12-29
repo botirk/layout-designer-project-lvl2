@@ -2,7 +2,7 @@
 
 footer {
   &.container { max-width: 100%; }
-  padding-top: 3rem;
+  padding-top: calc(3rem + 2px);
   padding-bottom: 2rem;
 
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
@@ -27,7 +27,14 @@ footer {
     .icons {
       display: flex;
       gap: 24px;
-      align-items: center;
+
+      a {
+        height: 24px;
+
+        display: flex;
+        align-items: flex-end;
+        img { margin-bottom: 1px; }
+      }
     }
   }
 
@@ -35,7 +42,7 @@ footer {
     margin-top: 72px;
     margin-bottom: 40px;
     height: 2px;
-    width: calc(100vw - 20px);
+    width: calc(100vw);
   }
 
   .end-container {
