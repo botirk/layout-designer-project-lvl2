@@ -14,16 +14,16 @@
   .container {
     padding: 0;
     margin-top: 50px;
-    
+
     @include media.mobile { margin-top: 25px; }
-    align-items: start; 
+    align-items: start;
   }
-  
+
   .counter { margin-top: 16px; }
 
   .btns {
     display: flex;
-    
+
     @include media.mobile { flex-direction: column; }
     gap: 1.5rem;
 

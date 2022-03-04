@@ -19,10 +19,12 @@
 
   .similar-item {
     width: 250px;
+
     @include media.mobile { width: 137px; }
 
     img {
       height: 250px;
+
       @include media.mobile { height: 137px; }
     }
 

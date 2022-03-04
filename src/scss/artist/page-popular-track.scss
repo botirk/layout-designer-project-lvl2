@@ -18,6 +18,7 @@
     .track-row {
       display: flex;
       row-gap: 25px;
+
       @include media.mobile { flex-direction: column; }
     }
   }
