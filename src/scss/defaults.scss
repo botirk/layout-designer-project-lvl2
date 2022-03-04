@@ -1,15 +1,15 @@
-@use 'media.scss' as media;
-@use 'colors.scss' as *;
+@use "media.scss" as media;
+@use "colors.scss" as *;
 
 @font-face {
   font-weight: normal;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   src: url(../fonts/roboto/Roboto-Regular.ttf);
 }
 
 @font-face {
   font-weight: bold;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   src: url(../fonts/roboto/Roboto-Bold.ttf);
 }
 
@@ -19,10 +19,10 @@
   padding: 0;
   border: none;
 
-  color: map-get($colors, 'dark-grey');
+  color: map-get($colors, "dark-grey");
   font-size: inherit;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 150%;
 }
 

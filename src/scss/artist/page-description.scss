@@ -1,10 +1,10 @@
-@use '../media.scss' as media;
+@use "../media.scss" as media;
 
 #page-description {
   &.container { max-width: 100%; }
 
   background-color: transparent;
-  background-image: url('../images/Morten Harket.png');
+  background-image: url("../images/Morten Harket.png");
   background-position: center;
   background-size: cover;
 
@@ -14,6 +14,7 @@
   .container {
     padding: 0;
     margin-top: 50px;
+    
     @include media.mobile { margin-top: 25px; }
     align-items: start; 
   }
@@ -22,6 +23,7 @@
 
   .btns {
     display: flex;
+    
     @include media.mobile { flex-direction: column; }
     gap: 1.5rem;
 
@@ -34,10 +36,7 @@
 
       border-radius: 5px;
       width: 200px;
-      padding-right: 30px;
-      padding-left: 30px;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding: 20px 30px;
 
       text-transform: uppercase;
 
@@ -48,4 +47,3 @@
     }
   }
 }
-

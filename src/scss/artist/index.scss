@@ -1,11 +1,11 @@
-@use '../defaults.scss';
-@use './defaults.scss' as artist-defaults;
-@use '../atomic.scss';
-@use '../colors.scss';
-
-@use '../header.scss';
-@use 'page-description.scss';
-@use 'page-popular-track.scss';
-@use 'page-discography.scss';
-@use 'page-similar.scss';
-@use '../footer.scss';
+@use "../defaults.scss";
+@use "./defaults.scss" as artist-defaults;
+@use "../atomic.scss";
+@use "../colors.scss";
+@use "../header.scss";
+// current level
+@use "page-description.scss";
+@use "page-popular-track.scss";
+@use "page-discography.scss";
+@use "page-similar.scss";
+@use "../footer.scss";
