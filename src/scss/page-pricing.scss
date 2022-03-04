@@ -1,4 +1,4 @@
-@use 'media.scss' as media;
+@use "media.scss" as media;
 
 #page-pricing {
   padding-top: 100px;
@@ -28,9 +28,9 @@
     background-position: center;
     background-size: cover;
 
-    &:nth-child(1) { background-image: url('../images/subscribe_1.png'); }
-    &:nth-child(2) { background-image: url('../images/subscribe_2.png'); }
-    &:nth-child(3) { background-image: url('../images/subscribe_3.png'); }
+    &:nth-child(1) { background-image: url("../images/subscribe_1.png"); }
+    &:nth-child(2) { background-image: url("../images/subscribe_2.png"); }
+    &:nth-child(3) { background-image: url("../images/subscribe_3.png"); }
 
     h3 {
       margin-top: 25px;
